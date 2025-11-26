@@ -13,6 +13,7 @@ YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 
+
 # Vérifier si Docker est installé
 if ! command -v docker &> /dev/null; then
     echo -e "${RED}❌ Docker n'est pas installé${NC}"
@@ -24,6 +25,7 @@ if ! command -v docker-compose &> /dev/null; then
     echo -e "${RED}❌ Docker Compose n'est pas installé${NC}"
     exit 1
 fi
+
 
 # Arrêter les conteneurs existants
 echo -e "${YELLOW}⏹️  Arrêt des conteneurs existants...${NC}"

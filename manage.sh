@@ -72,6 +72,10 @@ show_status() {
 update_site() {
     echo -e "${YELLOW}🔄 Mise à jour du site...${NC}"
     
+    # Récupérer les dernières modifications
+    echo -e "${YELLOW}📥 Récupération des dernières modifications...${NC}"
+    git pull
+    
     # Arrêter le conteneur
     docker-compose down
     
