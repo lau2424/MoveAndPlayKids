@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stages Vacances Enfants Bruxelles - Tiny Adventure | Move And Play Kids</title>
+    <meta name="description" content="Stages vacances pour enfants 4-8 ans à Woluwe Saint Lambert. Tiny Adventure : ateliers créatifs, moteurs, gustatifs et imaginaires. Réservez maintenant !">
+    <meta name="keywords" content="stage vacances Bruxelles, stage enfant, Tiny Adventure, activités vacances enfants, Woluwe Saint Lambert, stage créatif">
+    <meta name="author" content="Move And Play Kids">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.moveandplaykids.com/stages.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.moveandplaykids.com/stages.html">
+    <meta property="og:title" content="Stages Vacances Enfants Bruxelles - Tiny Adventure">
+    <meta property="og:description" content="Stages vacances pour enfants 4-8 ans : ateliers créatifs, moteurs, gustatifs. Inscriptions ouvertes !">
+    <meta property="og:image" content="https://www.moveandplaykids.com/assets/MoveAndPlaykids_main2.webp">
+    <meta property="og:locale" content="fr_BE">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.moveandplaykids.com/stages.html">
+    <meta name="twitter:title" content="Stages Vacances Enfants Bruxelles">
+    <meta name="twitter:description" content="Stages vacances Tiny Adventure pour enfants 4-8 ans à Woluwe Saint Lambert.">
+    <meta name="twitter:image" content="https://www.moveandplaykids.com/assets/MoveAndPlaykids_main2.webp">
+    
+    <!-- Langues alternatives -->
+    <link rel="alternate" hreflang="fr" href="https://www.moveandplaykids.com/stages.html">
+    <link rel="alternate" hreflang="en" href="https://www.moveandplaykids.com/stages.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.moveandplaykids.com/stages.html">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/LogoM&P.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="assets/LogoM&P.png" alt="Move And Play Kids Logo" class="h-12 w-auto">
+                    <div>
+                        <h1 class="text-xl font-bold text-mpl-ink">Move And Play Kids</h1>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.home">Accueil</a>
+                    <a href="projet.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.projet">Projet</a>
+                    <a href="ateliers.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.ateliers">Ateliers</a>
+                    <a href="stages.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium active" data-i18n="nav.stages">Stages</a>
+                    <a href="index.html#contact" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.contact">Contact</a>
+                    
+                    <!-- Language Switcher -->
+                    <div class="flex items-center space-x-2">
+                        <button id="langFr" class="lang-btn w-8 h-6 rounded overflow-hidden border-2 border-transparent hover:border-mpl-orange transition-all" data-lang="fr">
+                            <img src="assets/flag-fr.svg" alt="Français" class="w-full h-full object-cover">
+                        </button>
+                        <button id="langEn" class="lang-btn w-8 h-6 rounded overflow-hidden border-2 border-transparent hover:border-mpl-orange transition-all" data-lang="en">
+                            <img src="assets/flag-uk.svg" alt="English" class="w-full h-full object-cover">
+                        </button>
+                    </div>
+                    
+                    <!-- CTA Button -->
+                    <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary" data-i18n="hero.cta1">Réserver</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="burger" class="md:hidden p-2" aria-expanded="false" aria-label="Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="index.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.home">Accueil</a>
+                    <a href="ateliers.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.ateliers">Ateliers</a>
+                    <a href="stages.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium active" data-i18n="nav.stages">Stages</a>
+                    <a href="projet.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.projet">Projet</a>
+                    <a href="index.html#contact" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.contact">Contact</a>
+                    
+                    <!-- Language Switcher Mobile -->
+                    <div class="flex items-center space-x-2 pt-3">
+                        <button id="langFrMobile" class="lang-btn w-8 h-6 rounded overflow-hidden border-2 border-transparent hover:border-mpl-orange transition-all" data-lang="fr">
+                            <img src="assets/flag-fr.svg" alt="Français" class="w-full h-full object-cover">
+                        </button>
+                        <button id="langEnMobile" class="lang-btn w-8 h-6 rounded overflow-hidden border-2 border-transparent hover:border-mpl-orange transition-all" data-lang="en">
+                            <img src="assets/flag-uk.svg" alt="English" class="w-full h-full object-cover">
+                        </button>
+                    </div>
+                    
+                    <div class="flex space-x-3 pt-3">
+                        <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary" data-i18n="hero.cta1">Réserver</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-mpl-sky py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6" data-i18n="stages.title">
+                Nos Stages
+            </h1>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-mpl-ink text-center mb-6" data-i18n="stages.info.title">Stage : Tiny Adventure</h2>
+                
+                <p class="text-lg text-gray-700 text-center mb-8" data-i18n="stages.info.intro">
+                    Offrez à vos enfants des vacances rythmées de découvertes, de jeux et de créativité grâce à nos stages
+                </p>
+
+                <p class="text-lg text-gray-700 text-center mb-12" data-i18n="stages.info.description">
+                    Tiny Adventure est là pour stimuler leur curiosité, développer leur créativité et favoriser leur épanouissement à travers des ateliers musical, moteur, créatif, imaginaire, gustatif...
+                </p>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                    <div class="flex flex-col sm:flex-row gap-6 items-start">
+                        <!-- Texte à gauche -->
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-mpl-ink mb-6" data-i18n="stages.info.why.title">Pourquoi venir chez nous</h3>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-start">
+                                    <span class="text-mpl-orange mr-3">✓</span>
+                                    <span data-i18n="stages.info.why.point1">accessibilité à tous les ateliers en illimité</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-mpl-orange mr-3">✓</span>
+                                    <span data-i18n="stages.info.why.point2">Des activités variées pour tous les goûts</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-mpl-orange mr-3">✓</span>
+                                    <span data-i18n="stages.info.why.point3">Un cadre sécurisant et bienveillant pour votre enfant</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-mpl-orange mr-3">✓</span>
+                                    <span data-i18n="stages.info.why.point4">Des professionnelles petite enfance</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Image à droite -->
+                        <div class="flex-1 rounded-xl overflow-hidden shadow-lg">
+                            <img src="assets/MoveAndPlaykids_Stage_tinyadventure.webp" alt="Stage Tiny Adventure" class="w-full h-auto object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h4 class="text-xl font-bold text-mpl-ink mb-4" data-i18n="stages.info.who.title">Pour qui ?</h4>
+                        <p class="text-gray-700 mb-2"><strong data-i18n="stages.info.who.age">Âge</strong> : <span data-i18n="stages.info.who.age.value">de 4 à 8 ans</span></p>
+                        <p class="text-gray-700"><strong data-i18n="stages.info.who.level">Niveau</strong> : <span data-i18n="stages.info.who.level.value">Aucune compétence particulière n'est requise, seulement l'envie de s'amuser !</span></p>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h4 class="text-xl font-bold text-mpl-ink mb-4" data-i18n="stages.info.practical.title">Infos pratiques :</h4>
+                        <p class="text-gray-700 mb-2">📅 <strong data-i18n="stages.info.practical.dates">Dates</strong> : <span data-i18n="stages.info.practical.dates.value">vacances scolaire</span></p>
+                        <p class="text-gray-700 mb-2">🕒 <strong data-i18n="stages.info.practical.hours">Horaires</strong> : <span data-i18n="stages.info.practical.hours.value">De 8h à 17h</span></p>
+                        <p class="text-gray-700">📍 <strong data-i18n="stages.info.practical.location">Lieu</strong> : <span data-i18n="stages.info.practical.location.value">chaussée de roodebeek 128 WST</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stages Grid -->
+    <section class="py-8 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Stage 1: Aventures dans l'océan -->
+                <div class="stage-card">
+                    <div class="card-image bg-gradient-to-br from-blue-300 to-cyan-400">
+                        <img src="assets/MoveAndPlaykids_Stage_ocean.webp" alt="Stage Aventures dans l'océan" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-mpl-ink mb-3" data-i18n="stages.ocean.title">Aventures dans l'océan</h3>
+                        <div class="space-y-2 text-sm text-gray-600 mb-4">
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="stages.dates">Dates:</span>
+                                <span data-i18n="stages.ocean.dates">22 au 26 déc (25 férié)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.age">Âge:</span>
+                                <span data-i18n="stages.ocean.age">4-6 ans</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.time">Horaire:</span>
+                                <span data-i18n="stages.ocean.time">13h-16h</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
+                                <span data-i18n="stages.ocean.location">1200 Woluwe Saint Lambert</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
+                                <span class="text-mpl-red font-bold" data-i18n="stages.ocean.places">8 places disponibles</span>
+                            </div>
+                        </div>
+                        <div class="flex space-x-2">
+                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 2: Contes et légendes -->
+                <div class="stage-card">
+                    <div class="card-image bg-gradient-to-br from-purple-300 to-pink-400">
+                        <img src="assets/MoveAndPlaykids_Stage_contes.webp" alt="Stage Contes et légendes" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-mpl-ink mb-3" data-i18n="stages.contes.title">Contes et légendes</h3>
+                        <div class="space-y-2 text-sm text-gray-600 mb-4">
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="stages.dates">Dates:</span>
+                                <span data-i18n="stages.contes.dates">29 au 02 jan (01 férié)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.age">Âge:</span>
+                                <span data-i18n="stages.contes.age">4-6 ans</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.time">Horaire:</span>
+                                <span data-i18n="stages.contes.time">13h-16h</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
+                                <span data-i18n="stages.contes.location">1200 Woluwe Saint Lambert</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
+                                <span class="text-mpl-red font-bold" data-i18n="stages.contes.places">8 places disponibles</span>
+                            </div>
+                        </div>
+                        <div class="flex space-x-2">
+                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 3: Les ptit's marmitton -->
+                <div class="stage-card">
+                    <div class="card-image bg-gradient-to-br from-orange-300 to-red-400">
+                        <img src="assets/MoveAndPlaykids_Stage_marmitton.webp" alt="Stage Les ptit's marmitton" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-mpl-ink mb-3" data-i18n="stages.marmitton.title">Les ptit's marmitton</h3>
+                        <div class="space-y-2 text-sm text-gray-600 mb-4">
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="stages.dates">Dates:</span>
+                                <span data-i18n="stages.marmitton.dates">16 au 20 fev</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.age">Âge:</span>
+                                <span data-i18n="stages.marmitton.age">5-7 ans</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.time">Horaire:</span>
+                                <span data-i18n="stages.marmitton.time">19h-16h</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
+                                <span data-i18n="stages.marmitton.location">1200 Woluwe Saint Lambert</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
+                                <span class="text-mpl-red font-bold" data-i18n="stages.marmitton.places">8 places disponibles</span>
+                            </div>
+                        </div>
+                        <div class="flex space-x-2">
+                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 4: Créa Kids -->
+                <div class="stage-card">
+                    <div class="card-image bg-gradient-to-br from-yellow-300 to-green-400">
+                        <img src="assets/MoveAndPlaykids_Stage_creakids.webp" alt="Stage Créa Kids" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-mpl-ink mb-3" data-i18n="stages.creakids.title">Créa Kids</h3>
+                        <div class="space-y-2 text-sm text-gray-600 mb-4">
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="stages.dates">Dates:</span>
+                                <span data-i18n="stages.creakids.dates">23 au 27 fev</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.age">Âge:</span>
+                                <span data-i18n="stages.creakids.age">5-7 ans</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.time">Horaire:</span>
+                                <span data-i18n="stages.creakids.time">17h-16h</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
+                                <span data-i18n="stages.creakids.location">1200 Woluwe Saint Lambert</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
+                                <span class="text-mpl-red font-bold" data-i18n="stages.creakids.places">8 places disponibles</span>
+                            </div>
+                        </div>
+                        <div class="flex space-x-2">
+                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal-stage1" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-content">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-mpl-ink">Multi-Sports Été</h2>
+                <button data-modal-close class="text-gray-500 hover:text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="space-y-4">
+                <div>
+                    <h3 class="font-bold text-lg mb-2" data-i18n="stages.modal.infos">Informations pratiques</h3>
+                    <ul class="space-y-1 text-gray-700">
+                        <li><strong>Dates :</strong> 8-12 Juillet 2024</li>
+                        <li><strong>Horaires :</strong> 9h00-17h00</li>
+                        <li><strong>Âge :</strong> 6-8 ans</li>
+                        <li><strong>Lieu :</strong> Centre Sportif Paris 15ème</li>
+                        <li><strong>Encadrement :</strong> 1 animateur pour 6 enfants</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-2" data-i18n="stages.modal.schedule">Programme</h3>
+                    <ul class="space-y-1 text-gray-700">
+                        <li>• Lundi : Football et basketball</li>
+                        <li>• Mardi : Tennis et badminton</li>
+                        <li>• Mercredi : Natation et water-polo</li>
+                        <li>• Jeudi : Athlétisme et course d'orientation</li>
+                        <li>• Vendredi : Tournois et remise des prix</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex space-x-4 mt-8">
+                <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
+                <button data-modal-close class="btn-mpl-secondary flex-1" data-i18n="stages.modal.close">Fermer</button>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+    <footer class="bg-mpl-orange text-white py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-4 text-sm text-white">
+                <span>📞 0472 75 07 66</span>
+                <span class="hidden md:inline">•</span>
+                <span>✉️ contact@moveandplaykids.fr</span>
+                <span class="hidden md:inline">•</span>
+                <span>📍 Chaussée de Roodebeek 128, 1200 Woluwe Saint Lambert</span>
+                <span class="hidden md:inline">•</span>
+                <span>🕒 MER-SAM 9h-18h30, DIM 9h-12h30</span>
+            </div>
+            
+            <div class="border-t border-white border-opacity-30 mt-4 pt-4 text-center text-sm">
+                <p class="text-white" data-i18n="footer.rights">© Move And Play Kids — Tous droits réservés</p>
+                <p class="text-white">Made with <span class="text-mpl-orange">❤️</span> by Lau</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="translations.js"></script>
+    <script src="app.js"></script>
+    
+    <!-- Données structurées JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EventSeries",
+      "name": "Stages Tiny Adventure",
+      "description": "Stages vacances pour enfants de 4 à 8 ans avec ateliers variés",
+      "organizer": {
+        "@type": "Organization",
+        "name": "Move And Play Kids",
+        "url": "https://www.moveandplaykids.com"
+      },
+      "location": {
+        "@type": "Place",
+        "name": "Move And Play Kids",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Chaussée de Roodebeek 128",
+          "addressLocality": "Woluwe Saint Lambert",
+          "postalCode": "1200",
+          "addressCountry": "BE"
+        }
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "EUR",
+        "url": "https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids"
+      }
+    }
+    </script>
+</body>
+</html>

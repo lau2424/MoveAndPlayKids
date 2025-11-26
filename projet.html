@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Projet - Anne-Sophie & Move And Play Kids Bruxelles</title>
+    <meta name="description" content="Découvrez l'histoire d'Anne-Sophie, puéricultrice avec 15 ans d'expérience, et la vision de Move And Play Kids : un espace d'épanouissement pour enfants à Bruxelles.">
+    <meta name="keywords" content="puéricultrice Bruxelles, projet petite enfance, éducation enfants, Anne-Sophie, Move And Play Kids, Woluwe Saint Lambert">
+    <meta name="author" content="Move And Play Kids">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.moveandplaykids.com/projet.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.moveandplaykids.com/projet.html">
+    <meta property="og:title" content="Notre Projet - Move And Play Kids">
+    <meta property="og:description" content="Découvrez l'histoire et la vision de Move And Play Kids : un espace d'épanouissement pour enfants créé par Anne-Sophie, puéricultrice expérimentée.">
+    <meta property="og:image" content="https://www.moveandplaykids.com/assets/MoveAndPlaykids_main3.webp">
+    <meta property="og:locale" content="fr_BE">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.moveandplaykids.com/projet.html">
+    <meta name="twitter:title" content="Notre Projet - Move And Play Kids">
+    <meta name="twitter:description" content="Un espace d'épanouissement pour enfants créé par une puéricultrice passionnée.">
+    <meta name="twitter:image" content="https://www.moveandplaykids.com/assets/MoveAndPlaykids_main3.webp">
+    
+    <!-- Langues alternatives -->
+    <link rel="alternate" hreflang="fr" href="https://www.moveandplaykids.com/projet.html">
+    <link rel="alternate" hreflang="en" href="https://www.moveandplaykids.com/projet.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.moveandplaykids.com/projet.html">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/LogoM&P.png">
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="assets/LogoM&P.png" alt="Move And Play Kids Logo" class="h-12 w-auto">
+                    <div>
+                        <h1 class="text-xl font-bold text-mpl-ink">Move And Play Kids</h1>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.home">Accueil</a>
+                    <a href="projet.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.projet">Projet</a>
+                    <a href="ateliers.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.ateliers">Ateliers</a>
+                    <a href="stages.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.stages">Stages</a>
+                    <a href="index.html#contact" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.contact">Contact</a>
+                    
+                    <!-- Language Switcher -->
+                    <div class="flex items-center space-x-2">
+                        <button id="langFr" class="lang-btn w-8 h-6 rounded overflow-hidden border-2 border-transparent hover:border-mpl-orange transition-all" data-lang="fr">
+                            <img src="assets/flag-fr.svg" alt="Français" class="w-full h-full object-cover">
+                        </button>
+                        <button id="langEn" class="lang-btn w-8 h-6 rounded overflow-hidden border-2 border-transparent hover:border-mpl-orange transition-all" data-lang="en">
+                            <img src="assets/flag-uk.svg" alt="English" class="w-full h-full object-cover">
+                        </button>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary" data-i18n="hero.cta1">Réserver</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="burger" class="md:hidden p-2" aria-expanded="false" aria-label="Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="index.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.home">Accueil</a>
+                    <a href="ateliers.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.ateliers">Ateliers</a>
+                    <a href="stages.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.stages">Stages</a>
+                    <a href="projet.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.projet">Projet</a>
+                    <a href="index.html#contact" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.contact">Contact</a>
+                    
+                    <!-- Language Switcher Mobile -->
+                    <div class="flex items-center space-x-2 pt-3">
+                        <button id="langFrMobile" class="lang-btn w-8 h-6 rounded overflow-hidden border-2 border-transparent hover:border-mpl-orange transition-all" data-lang="fr">
+                            <img src="assets/flag-fr.svg" alt="Français" class="w-full h-full object-cover">
+                        </button>
+                        <button id="langEnMobile" class="lang-btn w-8 h-6 rounded overflow-hidden border-2 border-transparent hover:border-mpl-orange transition-all" data-lang="en">
+                            <img src="assets/flag-uk.svg" alt="English" class="w-full h-full object-cover">
+                        </button>
+                    </div>
+                    
+                    <div class="flex space-x-3 pt-3">
+                        <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary" data-i18n="hero.cta1">Réserver</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-mpl-sky to-mpl-yellow py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4" data-i18n="projet.hero.title">Notre Projet</h1>
+            <p class="text-xl text-white opacity-90" data-i18n="projet.hero.subtitle">Une passion au service de l'enfance</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <!-- Title -->
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-mpl-ink mb-4" data-i18n="projet.about.title">Qui suis-je ?</h2>
+                </div>
+
+                <!-- Content Grid -->
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <!-- Photo Placeholder -->
+                    <div class="order-2 md:order-1">
+                        <div class="bg-gray-100 rounded-2xl overflow-hidden shadow-xl aspect-[3/4] flex items-center justify-center">
+                            <div class="text-center p-8">
+                                <div class="w-24 h-24 bg-mpl-orange rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <span class="text-white text-5xl">👩</span>
+                                </div>
+                                <p class="text-gray-500 text-lg font-medium">Photo d'Anne-Sophie</p>
+                                <p class="text-gray-400 text-sm mt-2">À venir</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text Content -->
+                    <div class="order-1 md:order-2 space-y-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-mpl-orange mb-4" data-i18n="projet.about.name">Anne-Sophie</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed" data-i18n="projet.about.intro">
+                                Depuis plus de 15 ans, je travaille dans le secteur de la petite enfance, où j'accompagne les enfants et leurs familles avec passion et bienveillance.
+                            </p>
+                        </div>
+
+                        <p class="text-lg text-gray-700 leading-relaxed" data-i18n="projet.about.experience">
+                            Diplômée en puériculture, j'ai exercé en crèches en France et en Belgique, auprès de familles ainsi qu'en tant qu'animatrice. Cette expérience m'a permis de côtoyer au quotidien des enfants âgés de 3 mois à 8 ans, et de rechercher en permanence des activités favorisant leur développement, en m'appuyant sur des pratiques pédagogiques de qualité et en proposant des activités pensées pour le bien-être et l'éveil des enfants.
+                        </p>
+
+                        <p class="text-lg text-gray-700 leading-relaxed" data-i18n="projet.about.motivation">
+                            Maman de deux petites filles, je me suis souvent retrouvée à chercher un lieu capable de répondre à mes attentes de maman : un espace où l'enfant est au centre, où il peut explorer, découvrir et s'épanouir en toute sécurité. C'est ainsi qu'est né notre projet <span class="font-bold text-mpl-orange">MOVE AND PLAY KIDS</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                    <div class="text-center mb-8">
+                        <div class="w-20 h-20 bg-mpl-yellow rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-4xl">✨</span>
+                        </div>
+                        <h2 class="text-3xl font-bold text-mpl-ink mb-6" data-i18n="projet.vision.title">Notre Vision</h2>
+                    </div>
+
+                    <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+                        <p data-i18n="projet.vision.text1">
+                            Nous avons donc imaginé un espace pouvant accueillir l'enfant de 6 mois jusqu'à 8 ans dans des ateliers spécifiquement conçus pour stimuler la créativité, la curiosité et la confiance des enfants, dans un cadre bienveillant et ludique.
+                        </p>
+
+                        <p data-i18n="projet.vision.text2">
+                            Chaque activité est pensée pour permettre à l'enfant de découvrir, expérimenter et s'exprimer, tout en respectant son rythme et ses besoins.
+                        </p>
+
+                        <div class="bg-mpl-sky bg-opacity-10 rounded-xl p-6 mt-8">
+                            <p class="text-xl font-semibold text-mpl-ink text-center" data-i18n="projet.vision.goal">
+                                Notre objectif est de créer un espace unique, où l'apprentissage et le jeu se rencontrent, où chaque enfant peut trouver sa place, permettre à l'enfant de se développer et s'épanouir pleinement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-mpl-ink mb-6" data-i18n="projet.values.title">Nos Valeurs</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-mpl-red rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">❤️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-mpl-ink mb-3" data-i18n="projet.values.value1.title">Bienveillance</h3>
+                    <p class="text-gray-600" data-i18n="projet.values.value1.desc">Un accompagnement respectueux du rythme de chaque enfant</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-mpl-yellow rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">🎨</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-mpl-ink mb-3" data-i18n="projet.values.value2.title">Créativité</h3>
+                    <p class="text-gray-600" data-i18n="projet.values.value2.desc">Des activités stimulantes pour développer l'imagination</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-mpl-sky rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">🌟</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-mpl-ink mb-3" data-i18n="projet.values.value3.title">Épanouissement</h3>
+                    <p class="text-gray-600" data-i18n="projet.values.value3.desc">Un espace sécurisé pour grandir en confiance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-mpl-orange">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6" data-i18n="projet.cta.title">Rejoignez l'aventure Move And Play Kids</h2>
+            <p class="text-xl text-white opacity-90 mb-8" data-i18n="projet.cta.subtitle">Offrez à votre enfant un espace d'épanouissement unique</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="ateliers.html" class="btn-mpl-secondary text-lg px-8 py-4" data-i18n="projet.cta.ateliers">Découvrir les ateliers</a>
+                <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="bg-white text-mpl-orange hover:bg-gray-100 font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-lg" data-i18n="projet.cta.book">Réserver maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-mpl-orange text-white py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-4 text-sm text-white">
+                <span>📞 0472 75 07 66</span>
+                <span class="hidden md:inline">•</span>
+                <span>✉️ contact@moveandplaykids.fr</span>
+                <span class="hidden md:inline">•</span>
+                <span>📍 Chaussée de Roodebeek 128, 1200 Woluwe Saint Lambert</span>
+                <span class="hidden md:inline">•</span>
+                <span>🕒 MER-SAM 9h-18h30, DIM 9h-12h30</span>
+            </div>
+            
+            <div class="border-t border-white border-opacity-30 mt-4 pt-4 text-center text-sm">
+                <p class="text-white" data-i18n="footer.rights">© Move And Play Kids — Tous droits réservés</p>
+                <p class="text-white">Made with <span class="text-mpl-orange">❤️</span> by Lau</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="translations.js"></script>
+    <script src="app.js"></script>
+    
+    <!-- Données structurées JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "Notre Projet",
+      "description": "L'histoire et la vision de Move And Play Kids",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Anne-Sophie",
+        "jobTitle": "Puéricultrice et Fondatrice",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Move And Play Kids"
+        },
+        "description": "Puéricultrice avec plus de 15 ans d'expérience dans le secteur de la petite enfance"
+      }
+    }
+    </script>
+</body>
+</html>

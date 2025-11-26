@@ -1,0 +1,297 @@
+/* Move And Play Kids - Custom Styles */
+
+:root {
+  --mpl-yellow: #F2DB66;
+  --mpl-orange: #F2A74B;
+  --mpl-red:    #F23838;
+  --mpl-sky:    #7FC9DA;
+  --mpl-ink:    #404040;
+  --mpl-bg:     #FFFFFF;
+  --mpl-mask:   rgba(0,0,0,0.4);
+}
+
+/* Color Utilities */
+.bg-mpl-yellow { background-color: var(--mpl-yellow); }
+.bg-mpl-orange { background-color: var(--mpl-orange); }
+.bg-mpl-red    { background-color: var(--mpl-red); }
+.bg-mpl-sky    { background-color: var(--mpl-sky); }
+.text-mpl-ink  { color: var(--mpl-ink); }
+.text-mpl-orange { color: var(--mpl-orange); }
+.text-mpl-red  { color: var(--mpl-red); }
+
+/* Hero Carousel */
+.hero-carousel {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-slide.active { 
+  opacity: 1; 
+}
+
+.hero-mask::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--mpl-mask);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Custom Button Styles */
+.btn-mpl-primary {
+  background: linear-gradient(135deg, var(--mpl-orange), var(--mpl-red));
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-mpl-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(242, 56, 56, 0.3);
+}
+
+.btn-mpl-secondary {
+  background: var(--mpl-sky);
+  color: var(--mpl-ink);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-mpl-secondary:hover {
+  background: var(--mpl-yellow);
+  transform: translateY(-2px);
+}
+
+/* Card Styles */
+.workshop-card, .stage-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.workshop-card:hover, .stage-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: linear-gradient(135deg, var(--mpl-sky), var(--mpl-yellow));
+}
+
+/* Filter Styles */
+.filter-container {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.filter-select {
+  padding: 8px 12px;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+  background: white;
+  color: var(--mpl-ink);
+  font-weight: 500;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: var(--mpl-orange);
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  margin: 20px;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.modal.active .modal-content {
+  transform: scale(1);
+}
+
+/* Navigation Enhancements */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--mpl-orange);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Language Switcher */
+.lang-btn {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lang-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.lang-btn:active {
+  transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-carousel {
+    height: 400px;
+  }
+  
+  .hero-slide {
+    height: 400px;
+  }
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus styles for accessibility */
+button:focus,
+select:focus,
+a:focus {
+  outline: 2px solid var(--mpl-orange);
+  outline-offset: 2px;
+}
+
+/* FAQ Accordion Styles */
+.faq-item {
+  transition: all 0.3s ease;
+}
+
+.faq-item.active {
+  box-shadow: 0 8px 30px rgba(242, 167, 75, 0.2);
+}
+
+.faq-question {
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq-answer {
+  transition: max-height 0.3s ease-in-out;
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+}
+
+/* Contact Info Background */
+.contact-info-bg {
+  background: url('assets/MoveAndPlaykids_main3.webp');
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+}
+
+.contact-info-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(242, 167, 75, 0.96), rgba(127, 201, 218, 0.96));
+  z-index: 1;
+}
+
+.contact-info-bg > div {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-info-bg h3,
+.contact-info-bg h4,
+.contact-info-bg p {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.contact-info-bg .flex {
+  background: rgba(124, 124, 124, 0.25);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}

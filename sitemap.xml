@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <!-- Page d'accueil -->
+    <url>
+        <loc>https://www.moveandplaykids.com/</loc>
+        <lastmod>2024-11-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.moveandplaykids.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.moveandplaykids.com/"/>
+    </url>
+    
+    <!-- Page Ateliers -->
+    <url>
+        <loc>https://www.moveandplaykids.com/ateliers.html</loc>
+        <lastmod>2024-11-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.moveandplaykids.com/ateliers.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.moveandplaykids.com/ateliers.html"/>
+    </url>
+    
+    <!-- Page Stages -->
+    <url>
+        <loc>https://www.moveandplaykids.com/stages.html</loc>
+        <lastmod>2024-11-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.moveandplaykids.com/stages.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.moveandplaykids.com/stages.html"/>
+    </url>
+    
+    <!-- Page Projet -->
+    <url>
+        <loc>https://www.moveandplaykids.com/projet.html</loc>
+        <lastmod>2024-11-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.moveandplaykids.com/projet.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.moveandplaykids.com/projet.html"/>
+    </url>
+    
+</urlset>

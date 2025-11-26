@@ -1,0 +1,11 @@
+{
+  "name": "moveandplaykids",
+  "version": "1.0.0",
+  "description": "Move And Play Kids - Site web",
+  "scripts": {
+    "convert-images": "node convert-to-webp.js"
+  },
+  "dependencies": {
+    "sharp": "^0.33.0"
+  }
+}

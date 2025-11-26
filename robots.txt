@@ -1,0 +1,19 @@
+# robots.txt pour Move And Play Kids
+# https://www.moveandplaykids.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.moveandplaykids.com/sitemap.xml
+
+# Bloquer les fichiers inutiles pour le SEO
+Disallow: /node_modules/
+Disallow: /*.js$
+Disallow: /*.json$
+
+# Autoriser les assets et images
+Allow: /assets/
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.css$

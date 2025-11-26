@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move And Play Kids - Ateliers et Stages pour Enfants à Bruxelles</title>
+    <meta name="description" content="Ateliers ludiques et éducatifs pour enfants de 3 à 12 ans à Woluwe Saint Lambert. Développement moteur, créativité et confiance en soi à travers le jeu et le mouvement.">
+    <meta name="keywords" content="ateliers enfants, stages vacances, psychomotricité, éveil enfant, activités enfants Bruxelles, Woluwe Saint Lambert, crèche, garde d'enfants">
+    <meta name="author" content="Move And Play Kids">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.moveandplaykids.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.moveandplaykids.com/">
+    <meta property="og:title" content="Move And Play Kids - Ateliers et Stages pour Enfants à Bruxelles">
+    <meta property="og:description" content="Ateliers ludiques et éducatifs pour enfants de 3 à 12 ans à Woluwe Saint Lambert. Développement moteur, créativité et confiance en soi.">
+    <meta property="og:image" content="https://www.moveandplaykids.com/assets/MoveAndPlaykids_main1.webp">
+    <meta property="og:locale" content="fr_BE">
+    <meta property="og:site_name" content="Move And Play Kids">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.moveandplaykids.com/">
+    <meta name="twitter:title" content="Move And Play Kids - Ateliers et Stages pour Enfants">
+    <meta name="twitter:description" content="Ateliers ludiques et éducatifs pour enfants de 3 à 12 ans à Woluwe Saint Lambert.">
+    <meta name="twitter:image" content="https://www.moveandplaykids.com/assets/MoveAndPlaykids_main1.webp">
+    
+    <!-- Langues alternatives -->
+    <link rel="alternate" hreflang="fr" href="https://www.moveandplaykids.com/">
+    <link rel="alternate" hreflang="en" href="https://www.moveandplaykids.com/">
+    <link rel="alternate" hreflang="x-default" href="https://www.moveandplaykids.com/">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/LogoM&P.png">
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="assets/LogoM&P.png" alt="Move And Play Kids Logo" class="h-12 w-auto">
+                    <div>
+                        <h1 class="text-xl font-bold text-mpl-ink">Move And Play Kids</h1>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.home">Accueil</a>
+                    <a href="projet.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.projet">Projet</a>
+                    <a href="ateliers.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.ateliers">Ateliers</a>
+                    <a href="stages.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.stages">Stages</a>
+                    <a href="#contact" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.contact">Contact</a>
+                    
+                    <!-- Language Switcher -->
+                    <div class="flex items-center space-x-2">
+                        <button id="langFr" class="lang-btn w-8 h-6 rounded overflow-hidden border-2 border-transparent hover:border-mpl-orange transition-all" data-lang="fr">
+                            <img src="assets/flag-fr.svg" alt="Français" class="w-full h-full object-cover">
+                        </button>
+                        <button id="langEn" class="lang-btn w-8 h-6 rounded overflow-hidden border-2 border-transparent hover:border-mpl-orange transition-all" data-lang="en">
+                            <img src="assets/flag-uk.svg" alt="English" class="w-full h-full object-cover">
+                        </button>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary" data-i18n="hero.cta1">Réserver</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="burger" class="md:hidden p-2" aria-expanded="false" aria-label="Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="index.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.home">Accueil</a>
+                    <a href="ateliers.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.ateliers">Ateliers</a>
+                    <a href="stages.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.stages">Stages</a>
+                    <a href="projet.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.projet">Projet</a>
+                    <a href="#contact" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.contact">Contact</a>
+                    
+                    <!-- Language Switcher Mobile -->
+                    <div class="flex items-center space-x-2 pt-3">
+                        <button id="langFrMobile" class="lang-btn w-8 h-6 rounded overflow-hidden border-2 border-transparent hover:border-mpl-orange transition-all" data-lang="fr">
+                            <img src="assets/flag-fr.svg" alt="Français" class="w-full h-full object-cover">
+                        </button>
+                        <button id="langEnMobile" class="lang-btn w-8 h-6 rounded overflow-hidden border-2 border-transparent hover:border-mpl-orange transition-all" data-lang="en">
+                            <img src="assets/flag-uk.svg" alt="English" class="w-full h-full object-cover">
+                        </button>
+                    </div>
+                    
+                    <div class="flex space-x-3 pt-3">
+                        <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary" data-i18n="hero.cta1">Réserver</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero-carousel hero-mask">
+        <img src="assets/MoveAndPlaykids_main1.webp" alt="Enfants jouant ensemble" class="hero-slide active">
+        <img src="assets/MoveAndPlaykids_main2.webp" alt="Atelier créatif" class="hero-slide">
+        <img src="assets/MoveAndPlaykids_main3.webp" alt="Activité sportive" class="hero-slide">
+        <img src="assets/MoveAndPlaykids_main4.webp" alt="Jeux en groupe" class="hero-slide">
+        
+        <div class="hero-content absolute inset-0 flex items-center justify-center text-center text-white">
+            <div class="max-w-4xl mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight" data-i18n="hero.title">
+                    Bouger, jouer, grandir — des ateliers qui donnent le sourire
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90" data-i18n="hero.subtitle">
+                    Des activités ludiques et éducatives pour enfants de 3 à 12 ans
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-mpl-ink mb-6" data-i18n="about.title">À propos de Move And Play Kids</h2>
+                <p class="text-xl text-gray-600 mb-8" data-i18n="about.subtitle">Une approche unique du développement de l'enfant</p>
+                <div class="grid md:grid-cols-2 gap-8 text-left">
+                    <div>
+                        <p class="text-lg text-gray-700 leading-relaxed" data-i18n="about.text1">
+                            Move And Play Kids propose des ateliers innovants qui allient mouvement, jeu et apprentissage. Notre mission est d'accompagner chaque enfant dans son développement moteur, cognitif et social.
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-lg text-gray-700 leading-relaxed" data-i18n="about.text2">
+                            Nos activités sont conçues par des professionnels de la petite enfance pour offrir un environnement sécurisé et stimulant où chaque enfant peut s'épanouir à son rythme.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-mpl-ink mb-6" data-i18n="services.title">Nos Services</h2>
+                <p class="text-xl text-gray-600" data-i18n="services.subtitle">Des activités adaptées à chaque âge</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Workshops -->
+                <div class="text-center p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-mpl-yellow rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">🎯</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-mpl-ink mb-4" data-i18n="services.workshops">Ateliers Hebdomadaires</h3>
+                    <p class="text-gray-600" data-i18n="services.workshops.desc">Des séances régulières pour développer la motricité et la créativité</p>
+                </div>
+                
+                <!-- Camps -->
+                <div class="text-center p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-mpl-sky rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">🌞</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-mpl-ink mb-4" data-i18n="services.camps">Stages Vacances</h3>
+                    <p class="text-gray-600" data-i18n="services.camps.desc">Des programmes intensifs pendant les vacances scolaires</p>
+                </div>
+                
+                <!-- Events -->
+                <div class="text-center p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-mpl-orange rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">🎉</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-mpl-ink mb-4" data-i18n="services.events">Événements Spéciaux</h3>
+                    <p class="text-gray-600" data-i18n="services.events.desc">Anniversaires, fêtes et animations sur mesure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-mpl-ink mb-6" data-i18n="faq.title">Questions Fréquentes</h2>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <h3 class="text-xl font-bold text-mpl-ink pr-4" data-i18n="faq.q1">À partir de quel âge peut-on inscrire un enfant ?</h3>
+                        <svg class="faq-icon w-6 h-6 text-mpl-orange transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a1">Nos ateliers accueillent les enfants dès 3 ans jusqu'à 12 ans, avec des groupes adaptés à chaque tranche d'âge.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <h3 class="text-xl font-bold text-mpl-ink pr-4" data-i18n="faq.q2">Faut-il une tenue particulière ?</h3>
+                        <svg class="faq-icon w-6 h-6 text-mpl-orange transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a2">Nous recommandons des vêtements confortables et des chaussures de sport. Tout le matériel est fourni.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <h3 class="text-xl font-bold text-mpl-ink pr-4" data-i18n="faq.q3">Comment se déroule une séance type ?</h3>
+                        <svg class="faq-icon w-6 h-6 text-mpl-orange transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a3">Chaque séance dure 45 minutes et comprend un échauffement, des activités principales et un retour au calme.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <h3 class="text-xl font-bold text-mpl-ink pr-4" data-i18n="faq.q4">Comment se déroule l'arrivée et le départ des enfants à l'atelier ?</h3>
+                        <svg class="faq-icon w-6 h-6 text-mpl-orange transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a4">Nous vous remercions de patienter avec votre enfant jusqu'à ce que l'atelier ouvre et que l'animatrice puisse l'accueillir. Nous vous remercions d'être présent à la fin de l'atelier pour venir chercher votre enfant. Pour des raisons de sécurité, aucun départ seul ne sera autorisé sans accord écrit préalable des parents.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <h3 class="text-xl font-bold text-mpl-ink pr-4" data-i18n="faq.q5">Concernant les paiements et réservations</h3>
+                        <svg class="faq-icon w-6 h-6 text-mpl-orange transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a5">Le paiement et la réservation des ateliers, stages se fait directement en ligne. En cas d'impossibilité de régler par ce moyen, merci de nous contacter par e-mail afin de trouver une solution adaptée.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-mpl-ink mb-6" data-i18n="contact.title">Nous Contacter</h2>
+                <p class="text-xl text-gray-600" data-i18n="contact.subtitle">Une question ? N'hésitez pas à nous écrire</p>
+            </div>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+                    <div class="grid md:grid-cols-2">
+                        <!-- Left: Contact Info with Background Image -->
+                        <div class="contact-info-bg relative p-8 md:p-12 text-white">
+                            <div class="relative z-10 space-y-8">
+                                <div>
+                                    <h3 class="text-3xl font-bold mb-2" data-i18n="contact.info.title">Nos Coordonnées</h3>
+                                    <p class="text-white text-opacity-90" data-i18n="contact.info.subtitle">Contactez-nous pour plus d'informations</p>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-white bg-opacity-20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0">
+                                        <span class="text-2xl">📞</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-1" data-i18n="contact.phone">Téléphone</h4>
+                                        <p class="text-white text-opacity-90">0472 75 07 66</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-white bg-opacity-20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0">
+                                        <span class="text-2xl">✉️</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-1" data-i18n="contact.email">Email</h4>
+                                        <p class="text-white text-opacity-90">contact@moveandplaykids.fr</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-white bg-opacity-20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0">
+                                        <span class="text-2xl">📍</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-1" data-i18n="contact.address">Adresse</h4>
+                                        <p class="text-white text-opacity-90">Chaussée de Roodebeek 128<br>1200 Woluwe Saint Lambert</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-white bg-opacity-20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0">
+                                        <span class="text-2xl">🕒</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-1" data-i18n="contact.hours">Horaires</h4>
+                                        <p class="text-white text-opacity-90">MER-SAM 9h-18h30<br>DIM 9h-12h30</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Right: Contact Form -->
+                        <div class="p-8 md:p-12">
+                            <form action="https://formspree.io/f/xjkdqola" method="POST" class="space-y-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-bold text-mpl-ink mb-2" data-i18n="contact.form.name">Nom complet</label>
+                                    <input type="text" id="name" name="name" required 
+                                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-mpl-orange focus:outline-none transition-colors"
+                                        placeholder="">
+                                </div>
+                                
+                                <div>
+                                    <label for="email" class="block text-sm font-bold text-mpl-ink mb-2" data-i18n="contact.form.email">Email</label>
+                                    <input type="email" id="email" name="email" required 
+                                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-mpl-orange focus:outline-none transition-colors"
+                                        placeholder="">
+                                </div>
+                                
+                                <div>
+                                    <label for="phone" class="block text-sm font-bold text-mpl-ink mb-2" data-i18n="contact.form.phone">Téléphone</label>
+                                    <input type="tel" id="phone" name="phone" 
+                                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-mpl-orange focus:outline-none transition-colors"
+                                        placeholder="">
+                                </div>
+                                
+                                <div>
+                                    <label for="subject" class="block text-sm font-bold text-mpl-ink mb-2" data-i18n="contact.form.subject">Sujet</label>
+                                    <input type="text" id="subject" name="subject" required 
+                                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-mpl-orange focus:outline-none transition-colors"
+                                        placeholder="">
+                                </div>
+                                
+                                <div>
+                                    <label for="message" class="block text-sm font-bold text-mpl-ink mb-2" data-i18n="contact.form.message">Message</label>
+                                    <textarea id="message" name="message" rows="5" required 
+                                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-mpl-orange focus:outline-none transition-colors resize-none"
+                                        placeholder=""></textarea>
+                                </div>
+                                
+                                <button type="submit" class="w-full btn-mpl-primary text-center" data-i18n="contact.form.submit">
+                                    Envoyer le message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-mpl-orange text-white py-6">
+        <div class="container mx-auto px-4 text-center">            
+                <p class="text-white" data-i18n="footer.rights">© Move And Play Kids — Tous droits réservés</p>
+                <p class="text-white">Made with <span class="text-mpl-orange">❤️</span> by Lau</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="translations.js"></script>
+    <script src="app.js"></script>
+    
+    <!-- Données structurées JSON-LD pour le SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Move And Play Kids",
+      "image": "https://www.moveandplaykids.com/assets/MoveAndPlaykids_main1.webp",
+      "@id": "https://www.moveandplaykids.com",
+      "url": "https://www.moveandplaykids.com",
+      "telephone": "+32472750766",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chaussée de Roodebeek 128",
+        "addressLocality": "Woluwe Saint Lambert",
+        "postalCode": "1200",
+        "addressCountry": "BE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.8429,
+        "longitude": 4.4214
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "18:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "09:00",
+          "closes": "12:30"
+        }
+      ],
+      "sameAs": [
+        "https://www.moveandplaykids.com"
+      ],
+      "description": "Ateliers ludiques et éducatifs pour enfants de 3 à 12 ans. Développement moteur, créativité et confiance en soi à travers le jeu et le mouvement."
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Move And Play Kids",
+      "url": "https://www.moveandplaykids.com",
+      "logo": "https://www.moveandplaykids.com/assets/MoveAndPlaykids_main1.webp",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+32472750766",
+        "contactType": "customer service",
+        "email": "contact@moveandplaykids.fr",
+        "availableLanguage": ["French", "English"]
+      }
+    }
+    </script>
+</body>
+</html>

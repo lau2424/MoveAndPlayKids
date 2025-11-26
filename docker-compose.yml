@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  moveandplaykids:
+    build: .
+    container_name: moveandplaykids-web
+    restart: unless-stopped
+    ports:
+      - "4000:80"
+    volumes:
+      # Monter les logs pour le debugging
+      - ./logs:/var/log/nginx
+    networks:
+      - moveandplaykids-network
+    labels:
+      - "com.moveandplaykids.description=Move And Play Kids Website"
+
+networks:
+  moveandplaykids-network:
+    driver: bridge
