@@ -1,7 +1,7 @@
 /* Move And Play Kids - Custom Styles */
 
 :root {
-  --mpl-yellow: #F2DB66;
+  --mpl-yellow: rgb(255, 238, 1);
   --mpl-orange: #F2A74B;
   --mpl-red:    #F23838;
   --mpl-sky:    #7FC9DA;
@@ -263,7 +263,7 @@ a:focus {
 
 /* Contact Info Background */
 .contact-info-bg {
-  background: url('assets/MoveAndPlaykids_main3.webp');
+  background: url('assets/MoveAndPlaykids_Form.webp');
   background-size: cover;
   background-position: center;
   min-height: 600px;
@@ -273,7 +273,7 @@ a:focus {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(242, 167, 75, 0.96), rgba(127, 201, 218, 0.96));
+  background: rgba(0, 0, 0, 0.25);
   z-index: 1;
 }
 
@@ -294,4 +294,271 @@ a:focus {
   padding: 1rem;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Opening Popup Styles */
+.opening-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.opening-popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.opening-popup-content {
+  background: white;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transform: scale(0.9) translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.opening-popup.show .opening-popup-content {
+  transform: scale(1) translateY(0);
+}
+
+.opening-popup-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  color: var(--mpl-ink);
+}
+
+.opening-popup-close:hover {
+  background: var(--mpl-red);
+  color: white;
+  transform: rotate(90deg);
+}
+
+.opening-popup-header {
+  background: linear-gradient(135deg, var(--mpl-yellow), var(--mpl-orange));
+  padding: 40px 30px 30px;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+}
+
+.opening-popup-icon {
+  font-size: 60px;
+  margin-bottom: 15px;
+  animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.opening-popup-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin: 0;
+}
+
+.opening-popup-body {
+  padding: 30px;
+}
+
+.opening-popup-intro {
+  text-align: center;
+  font-size: 16px;
+  color: var(--mpl-ink);
+  margin-bottom: 20px;
+}
+
+.opening-popup-highlight {
+  background: linear-gradient(135deg, rgba(242, 219, 102, 0.2), rgba(242, 167, 75, 0.2));
+  border-left: 4px solid var(--mpl-orange);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.opening-popup-highlight h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--mpl-orange);
+  margin: 0 0 10px 0;
+}
+
+.opening-popup-validity {
+  font-size: 14px;
+  color: var(--mpl-red);
+  font-style: italic;
+  margin: 0;
+}
+
+.opening-popup-details {
+  margin-bottom: 25px;
+}
+
+.opening-popup-description {
+  font-size: 16px;
+  color: var(--mpl-ink);
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.opening-popup-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.opening-popup-list li {
+  background: rgba(127, 201, 218, 0.1);
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: var(--mpl-ink);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.opening-popup-list li:hover {
+  background: rgba(127, 201, 218, 0.2);
+  transform: translateX(5px);
+}
+
+.opening-popup-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.opening-popup-info-item {
+  background: white;
+  border: 2px solid var(--mpl-yellow);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: var(--mpl-ink);
+}
+
+.opening-popup-options {
+  background: rgba(242, 219, 102, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.opening-popup-options p {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  color: var(--mpl-ink);
+  text-align: center;
+}
+
+.opening-popup-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.opening-popup-option {
+  background: white;
+  border: 2px solid var(--mpl-sky);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--mpl-sky);
+  transition: all 0.3s ease;
+}
+
+.opening-popup-option:hover {
+  background: var(--mpl-sky);
+  color: white;
+  transform: scale(1.05);
+}
+
+.opening-popup-footer {
+  padding: 0 30px 30px;
+  text-align: center;
+}
+
+.opening-popup-cta {
+  width: 100%;
+  padding: 16px 32px;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  box-shadow: 0 4px 15px rgba(242, 56, 56, 0.3);
+}
+
+.opening-popup-cta:hover {
+  box-shadow: 0 8px 25px rgba(242, 56, 56, 0.4);
+}
+
+/* Image adjustments for specific stages */
+.img-zoom-out {
+  object-fit: cover;
+  object-position: center top;
+  transform: scale(1);
+}
+
+/* Responsive Design for Popup */
+@media (max-width: 640px) {
+  .opening-popup-title {
+    font-size: 22px;
+  }
+  
+  .opening-popup-icon {
+    font-size: 50px;
+  }
+  
+  .opening-popup-body {
+    padding: 20px;
+  }
+  
+  .opening-popup-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .opening-popup-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .opening-popup-options-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .opening-popup-highlight h3 {
+    font-size: 20px;
+  }
 }

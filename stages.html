@@ -45,12 +45,12 @@
         <nav class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <!-- Logo -->
-                <div class="flex items-center space-x-3">
+                <a href="index.html" class="flex items-center space-x-3">
                     <img src="assets/LogoM&P.webp" alt="Move And Play Kids Logo" class="h-12 w-auto">
                     <div>
                         <h1 class="text-xl font-bold text-mpl-ink">Move And Play Kids</h1>
                     </div>
-                </div>
+                </a>
                 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
@@ -71,7 +71,7 @@
                     </div>
                     
                     <!-- CTA Button -->
-                    <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary" data-i18n="hero.cta1">Réserver</a>
+                    <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/moveplay" target="_blank" class="btn-mpl-primary" data-i18n="hero.cta1">Réserver</a>
                 </div>
                 
                 <!-- Mobile Menu Button -->
@@ -102,7 +102,7 @@
                     </div>
                     
                     <div class="flex space-x-3 pt-3">
-                        <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary" data-i18n="hero.cta1">Réserver</a>
+                        <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/moveplay" target="_blank" class="btn-mpl-primary" data-i18n="hero.cta1">Réserver</a>
                     </div>
                 </div>
             </div>
@@ -121,16 +121,12 @@
     <!-- Info Section -->
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-mpl-ink text-center mb-6" data-i18n="stages.info.title">Stage : Tiny Adventure</h2>
-                
+            <div class="max-w-4xl mx-auto">                
                 <p class="text-lg text-gray-700 text-center mb-8" data-i18n="stages.info.intro">
                     Offrez à vos enfants des vacances rythmées de découvertes, de jeux et de créativité grâce à nos stages
                 </p>
 
-                <p class="text-lg text-gray-700 text-center mb-12" data-i18n="stages.info.description">
-                    Tiny Adventure est là pour stimuler leur curiosité, développer leur créativité et favoriser leur épanouissement à travers des ateliers musical, moteur, créatif, imaginaire, gustatif...
-                </p>
+                <p class="text-lg text-gray-700 text-center mb-12" data-i18n="stages.info.description"></p>
 
                 <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
                     <div class="flex flex-col sm:flex-row gap-6 items-start">
@@ -187,17 +183,122 @@
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Stage 1: Aventures dans l'océan -->
+                <!-- Stage 1: Mission dans l’espace -->
                 <div class="stage-card">
                     <div class="card-image bg-gradient-to-br from-blue-300 to-cyan-400">
-                        <img src="assets/MoveAndPlaykids_Stage_ocean.webp" alt="Stage Aventures dans l'océan" class="w-full h-full object-cover">
+                        <img src="assets/MoveAndPlaykids_Stage_ocean.webp" alt="Stage Mission dans l’espace" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-mpl-ink mb-3" data-i18n="stages.space.title">Mission dans l’espace</h3>
+                        <div class="space-y-2 text-sm text-gray-600 mb-4">
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="stages.dates">Dates:</span>
+                                <span data-i18n="stages.space.dates">06 au 10 juillet</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.age">Âge:</span>
+                                <span data-i18n="stages.space.age">3-5 ans</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.time">Horaire:</span>
+                                <span data-i18n="stages.space.time">8h - 17h</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
+                                <span data-i18n="stages.space.location">1200 Woluwe Saint Lambert</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
+                                <span class="text-mpl-red font-bold" data-i18n="stages.space.places">180€ / stage</span>
+                            </div>
+                        </div>
+                        <div class="flex space-x-2">
+                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/moveplay" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 2: Le souffle de l’air -->
+                <div class="stage-card">
+                    <div class="card-image bg-gradient-to-br from-purple-300 to-pink-400">
+                        <img src="assets/MoveAndPlaykids_Stage_contes.webp" alt="Stage Le souffle de l’air" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-mpl-ink mb-3" data-i18n="stages.air.title">Le souffle de l’air</h3>
+                        <div class="space-y-2 text-sm text-gray-600 mb-4">
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="stages.dates">Dates:</span>
+                                <span data-i18n="stages.air.dates">13 au 17 juillet</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.age">Âge:</span>
+                                <span data-i18n="stages.air.age">5-8 ans</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.time">Horaire:</span>
+                                <span data-i18n="stages.air.time">8h - 17h</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
+                                <span data-i18n="stages.air.location">1200 Woluwe Saint Lambert</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
+                                <span class="text-mpl-red font-bold" data-i18n="stages.air.places">180€ / stage</span>
+                            </div>
+                        </div>
+                        <div class="flex space-x-2">
+                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/moveplay" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 3: Aventure au Cœur de la Savane -->
+                <div class="stage-card">
+                    <div class="card-image bg-gradient-to-br from-orange-300 to-red-400">
+                        <img src="assets/MoveAndPlaykids_Stage_marmitton.webp" alt="Stage Aventure au Cœur de la Savane" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-mpl-ink mb-3" data-i18n="stages.savane.title">Aventure au Cœur de la Savane</h3>
+                        <div class="space-y-2 text-sm text-gray-600 mb-4">
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="stages.dates">Dates:</span>
+                                <span data-i18n="stages.savane.dates">20 au 24 juillet</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.age">Âge:</span>
+                                <span data-i18n="stages.savane.age">4-6 ans</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.time">Horaire:</span>
+                                <span data-i18n="stages.savane.time">8h - 17h</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
+                                <span data-i18n="stages.savane.location">1200 Woluwe Saint Lambert</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
+                                <span class="text-mpl-red font-bold" data-i18n="stages.savane.places">180€ / stage</span>
+                            </div>
+                        </div>
+                        <div class="flex space-x-2">
+                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/moveplay" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 4: Aventures dans l'océan -->
+                <div class="stage-card">
+                    <div class="card-image bg-gradient-to-br from-blue-300 to-cyan-400">
+                        <img src="assets/MoveAndPlaykids_Stage_ocean.webp" alt="Stage Aventures dans l'océan" class="w-full h-full img-zoom-out">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-mpl-ink mb-3" data-i18n="stages.ocean.title">Aventures dans l'océan</h3>
                         <div class="space-y-2 text-sm text-gray-600 mb-4">
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="stages.dates">Dates:</span>
-                                <span data-i18n="stages.ocean.dates">22 au 26 déc (25 férié)</span>
+                                <span data-i18n="stages.ocean.dates">27 avril au 1er mai</span>
                             </div>
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.age">Âge:</span>
@@ -205,7 +306,7 @@
                             </div>
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.time">Horaire:</span>
-                                <span data-i18n="stages.ocean.time">13h-16h</span>
+                                <span data-i18n="stages.ocean.time">8h - 17h</span>
                             </div>
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
@@ -213,26 +314,26 @@
                             </div>
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
-                                <span class="text-mpl-red font-bold" data-i18n="stages.ocean.places">8 places disponibles</span>
+                                <span class="text-mpl-red font-bold" data-i18n="stages.ocean.places">150euros / stage</span>
                             </div>
                         </div>
                         <div class="flex space-x-2">
-                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
+                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/moveplay" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Stage 2: Contes et légendes -->
+                <!-- Stage 5: Contes et légendes -->
                 <div class="stage-card">
                     <div class="card-image bg-gradient-to-br from-purple-300 to-pink-400">
-                        <img src="assets/MoveAndPlaykids_Stage_contes.webp" alt="Stage Contes et légendes" class="w-full h-full object-cover">
+                        <img src="assets/MoveAndPlaykids_Stage_contes.webp" alt="Stage Contes et légendes" class="w-full h-full img-zoom-out">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-mpl-ink mb-3" data-i18n="stages.contes.title">Contes et légendes</h3>
                         <div class="space-y-2 text-sm text-gray-600 mb-4">
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="stages.dates">Dates:</span>
-                                <span data-i18n="stages.contes.dates">29 au 02 jan (01 férié)</span>
+                                <span data-i18n="stages.contes.dates">5 mai au 8 mai</span>
                             </div>
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.age">Âge:</span>
@@ -240,7 +341,7 @@
                             </div>
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.time">Horaire:</span>
-                                <span data-i18n="stages.contes.time">13h-16h</span>
+                                <span data-i18n="stages.contes.time">8h - 17h</span>
                             </div>
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
@@ -248,16 +349,16 @@
                             </div>
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
-                                <span class="text-mpl-red font-bold" data-i18n="stages.contes.places">8 places disponibles</span>
+                                <span class="text-mpl-red font-bold" data-i18n="stages.contes.places">150euros / stage</span>
                             </div>
                         </div>
                         <div class="flex space-x-2">
-                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
+                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/moveplay" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Stage 3: Les ptit's marmitton -->
+                <!-- Stage 6: Les ptit's marmitton -->
                 <div class="stage-card">
                     <div class="card-image bg-gradient-to-br from-orange-300 to-red-400">
                         <img src="assets/MoveAndPlaykids_Stage_marmitton.webp" alt="Stage Les ptit's marmitton" class="w-full h-full object-cover">
@@ -267,15 +368,15 @@
                         <div class="space-y-2 text-sm text-gray-600 mb-4">
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="stages.dates">Dates:</span>
-                                <span data-i18n="stages.marmitton.dates">16 au 20 fev</span>
+                                <span data-i18n="stages.marmitton.dates">27 au 31 juillet</span>
                             </div>
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.age">Âge:</span>
-                                <span data-i18n="stages.marmitton.age">5-7 ans</span>
+                                <span data-i18n="stages.marmitton.age">5-8 ans</span>
                             </div>
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.time">Horaire:</span>
-                                <span data-i18n="stages.marmitton.time">19h-16h</span>
+                                <span data-i18n="stages.marmitton.time">8h - 17h</span>
                             </div>
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
@@ -283,16 +384,51 @@
                             </div>
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
-                                <span class="text-mpl-red font-bold" data-i18n="stages.marmitton.places">8 places disponibles</span>
+                                <span class="text-mpl-red font-bold" data-i18n="stages.marmitton.places">195euros / stage</span>
                             </div>
                         </div>
                         <div class="flex space-x-2">
-                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
+                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/moveplay" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Stage 4: Créa Kids -->
+                <!-- Stage 7: Voyage au Temps des Dinos -->
+                <div class="stage-card">
+                    <div class="card-image bg-gradient-to-br from-green-300 to-lime-400">
+                        <img src="assets/MoveAndPlaykids_Stage_ocean.webp" alt="Stage Voyage au Temps des Dinos" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-mpl-ink mb-3" data-i18n="stages.dinos.title">Voyage au Temps des Dinos</h3>
+                        <div class="space-y-2 text-sm text-gray-600 mb-4">
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="stages.dates">Dates:</span>
+                                <span data-i18n="stages.dinos.dates">03 au 07 août</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.age">Âge:</span>
+                                <span data-i18n="stages.dinos.age">3-5 ans</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.time">Horaire:</span>
+                                <span data-i18n="stages.dinos.time">8h - 17h</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
+                                <span data-i18n="stages.dinos.location">1200 Woluwe Saint Lambert</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
+                                <span class="text-mpl-red font-bold" data-i18n="stages.dinos.places">180€ / stage</span>
+                            </div>
+                        </div>
+                        <div class="flex space-x-2">
+                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/moveplay" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 8: Créa Kids -->
                 <div class="stage-card">
                     <div class="card-image bg-gradient-to-br from-yellow-300 to-green-400">
                         <img src="assets/MoveAndPlaykids_Stage_creakids.webp" alt="Stage Créa Kids" class="w-full h-full object-cover">
@@ -302,7 +438,7 @@
                         <div class="space-y-2 text-sm text-gray-600 mb-4">
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="stages.dates">Dates:</span>
-                                <span data-i18n="stages.creakids.dates">23 au 27 fev</span>
+                                <span data-i18n="stages.creakids.dates">10 au 14 août</span>
                             </div>
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.age">Âge:</span>
@@ -310,7 +446,7 @@
                             </div>
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.time">Horaire:</span>
-                                <span data-i18n="stages.creakids.time">17h-16h</span>
+                                <span data-i18n="stages.creakids.time">8h - 17h</span>
                             </div>
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
@@ -318,11 +454,46 @@
                             </div>
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
-                                <span class="text-mpl-red font-bold" data-i18n="stages.creakids.places">8 places disponibles</span>
+                                <span class="text-mpl-red font-bold" data-i18n="stages.creakids.places">195euros / stage</span>
                             </div>
                         </div>
                         <div class="flex space-x-2">
-                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
+                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/moveplay" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 9: Sur la banquise -->
+                <div class="stage-card">
+                    <div class="card-image bg-gradient-to-br from-cyan-300 to-blue-400">
+                        <img src="assets/MoveAndPlaykids_Stage_ocean.webp" alt="Stage Sur la banquise" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-mpl-ink mb-3" data-i18n="stages.banquise.title">Sur la banquise</h3>
+                        <div class="space-y-2 text-sm text-gray-600 mb-4">
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="stages.dates">Dates:</span>
+                                <span data-i18n="stages.banquise.dates">17 au 21 août</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.age">Âge:</span>
+                                <span data-i18n="stages.banquise.age">4-6 ans</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.time">Horaire:</span>
+                                <span data-i18n="stages.banquise.time">8h - 17h</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
+                                <span data-i18n="stages.banquise.location">1200 Woluwe Saint Lambert</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
+                                <span class="text-mpl-red font-bold" data-i18n="stages.banquise.places">150€ / stage</span>
+                            </div>
+                        </div>
+                        <div class="flex space-x-2">
+                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/moveplay" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
                         </div>
                     </div>
                 </div>
@@ -368,7 +539,7 @@
             </div>
             
             <div class="flex space-x-4 mt-8">
-                <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
+                <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/moveplay" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">S'inscrire</a>
                 <button data-modal-close class="btn-mpl-secondary flex-1" data-i18n="stages.modal.close">Fermer</button>
             </div>
         </div>
@@ -384,7 +555,7 @@
                 <span class="hidden md:inline">•</span>
                 <span>📍 Chaussée de Roodebeek 128, 1200 Woluwe Saint Lambert</span>
                 <span class="hidden md:inline">•</span>
-                <span>🕒 MER-SAM 9h-18h30, DIM 9h-12h30</span>
+                <span>🕒 MER-SAM 9h-19h, DIM 9h-13h</span>
             </div>
             
             <div class="border-t border-white border-opacity-30 mt-4 pt-4 text-center text-sm">
@@ -425,7 +596,7 @@
         "@type": "AggregateOffer",
         "availability": "https://schema.org/InStock",
         "priceCurrency": "EUR",
-        "url": "https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids"
+        "url": "https://booking.myrezapp.com/fr/online/booking/calendar/21324/moveplay"
       }
     }
     </script>

@@ -41,17 +41,79 @@
     <link rel="icon" type="image/png" href="assets/LogoM&P.webp">
 </head>
 <body class="bg-white text-gray-800">
+    <!-- Opening Announcement Popup -->
+    <div id="openingPopup" class="opening-popup">
+        <div class="opening-popup-content">
+            <button id="closePopup" class="opening-popup-close" aria-label="Fermer">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            
+            <div class="opening-popup-header">
+                <div class="opening-popup-icon">🎉</div>
+                <h2 class="opening-popup-title">Notre structure ouvre ses portes !</h2>
+            </div>
+            
+            <div class="opening-popup-body">
+                <p class="opening-popup-intro">Pour cette occasion, nous vous proposons d'inscrire vos enfants à</p>
+                
+                <div class="opening-popup-highlight">
+                    <h3>"L'Atelier Découverte"</h3>
+                    <p class="opening-popup-validity">(valable uniquement pour la fin de l'année 2025)</p>
+                </div>
+                
+                <div class="opening-popup-details">
+                    <p class="opening-popup-description">
+                        Cet atelier lui donne accès à l'ensemble des ateliers :
+                    </p>
+                    <ul class="opening-popup-list">
+                        <li>✨ Motricité libre</li>
+                        <li>🎭 Imaginaire</li>
+                        <li>🎨 Créatif</li>
+                        <li>🍽️ Gustatif</li>
+                    </ul>
+                </div>
+                
+                <div class="opening-popup-info">
+                    <div class="opening-popup-info-item">
+                        <strong>👶 Âge :</strong> À partir de 4 ans
+                    </div>
+                    <div class="opening-popup-info-item">
+                        <strong>📍 Places :</strong> Limitées
+                    </div>
+                </div>
+                
+                <div class="opening-popup-options">
+                    <p><strong>Formules d'inscription :</strong></p>
+                    <div class="opening-popup-options-grid">
+                        <span class="opening-popup-option">1 heure</span>
+                        <span class="opening-popup-option">2 heures</span>
+                        <span class="opening-popup-option">Demi-journée</span>
+                        <span class="opening-popup-option">Journée complète</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="opening-popup-footer">
+                <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/moveplay" target="_blank" class="btn-mpl-primary opening-popup-cta">
+                    S'inscrire maintenant
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="sticky top-0 z-40 bg-white shadow-md">
         <nav class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <!-- Logo -->
-                <div class="flex items-center space-x-3">
+                <a href="index.html" class="flex items-center space-x-3">
                     <img src="assets/LogoM&P.webp" alt="Move And Play Kids Logo" class="h-12 w-auto">
                     <div>
                         <h1 class="text-xl font-bold text-mpl-ink">Move And Play Kids</h1>
                     </div>
-                </div>
+                </a>
                 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
@@ -72,7 +134,7 @@
                     </div>
                     
                     <!-- CTA Buttons -->
-                    <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary" data-i18n="hero.cta1">Réserver</a>
+                    <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/moveplay" target="_blank" class="btn-mpl-primary" data-i18n="hero.cta1">Réserver</a>
                 </div>
                 
                 <!-- Mobile Menu Button -->
@@ -103,7 +165,7 @@
                     </div>
                     
                     <div class="flex space-x-3 pt-3">
-                        <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21577/move-and-play-kids" target="_blank" class="btn-mpl-primary" data-i18n="hero.cta1">Réserver</a>
+                        <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/moveplay" target="_blank" class="btn-mpl-primary" data-i18n="hero.cta1">Réserver</a>
                     </div>
                 </div>
             </div>
@@ -111,11 +173,12 @@
     </header>
 
     <!-- Hero Section with Carousel -->
-    <section class="hero-carousel hero-mask">
+    <section class="hero-carousel hero-mask h-[800px]">
         <img src="assets/MoveAndPlaykids_main1.webp" alt="Enfants jouant ensemble" class="hero-slide active">
         <img src="assets/MoveAndPlaykids_main2.webp" alt="Atelier créatif" class="hero-slide">
         <img src="assets/MoveAndPlaykids_main3.webp" alt="Activité sportive" class="hero-slide">
         <img src="assets/MoveAndPlaykids_main4.webp" alt="Jeux en groupe" class="hero-slide">
+        <img src="assets/MoveAndPlaykids_main5.webp" alt="Apprendre à se déplacer" class="hero-slide">
         
         <div class="hero-content absolute inset-0 flex items-center justify-center text-center text-white">
             <div class="max-w-4xl mx-auto px-4">
@@ -129,36 +192,9 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-4xl font-bold text-mpl-ink mb-6" data-i18n="about.title">À propos de Move And Play Kids</h2>
-                <p class="text-xl text-gray-600 mb-8" data-i18n="about.subtitle">Une approche unique du développement de l'enfant</p>
-                <div class="grid md:grid-cols-2 gap-8 text-left">
-                    <div>
-                        <p class="text-lg text-gray-700 leading-relaxed" data-i18n="about.text1">
-                            Move And Play Kids propose des ateliers innovants qui allient mouvement, jeu et apprentissage. Notre mission est d'accompagner chaque enfant dans son développement moteur, cognitif et social.
-                        </p>
-                    </div>
-                    <div>
-                        <p class="text-lg text-gray-700 leading-relaxed" data-i18n="about.text2">
-                            Nos activités sont conçues par des professionnels de la petite enfance pour offrir un environnement sécurisé et stimulant où chaque enfant peut s'épanouir à son rythme.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Services Section -->
     <section id="services" class="py-20">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-mpl-ink mb-6" data-i18n="services.title">Nos Services</h2>
-                <p class="text-xl text-gray-600" data-i18n="services.subtitle">Des activités adaptées à chaque âge</p>
-            </div>
-            
+        <div class="container mx-auto px-4">            
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Workshops -->
                 <div class="text-center p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
@@ -190,6 +226,30 @@
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-mpl-ink mb-6" data-i18n="about.title">À propos de Move And Play Kids</h2>
+                <p class="text-xl text-gray-600 mb-8" data-i18n="about.subtitle">Une approche unique du développement de l'enfant</p>
+                <div class="grid md:grid-cols-2 gap-8 text-left">
+                    <div>
+                        <p class="text-lg text-gray-700 leading-relaxed" data-i18n="about.text1">
+                            Move And Play Kids propose des ateliers innovants qui allient mouvement, jeu et apprentissage. Notre mission est d'accompagner chaque enfant dans son développement moteur, cognitif et social.
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-lg text-gray-700 leading-relaxed" data-i18n="about.text2">
+                            Nos activités sont conçues par des professionnels de la petite enfance pour offrir un environnement sécurisé et stimulant où chaque enfant peut s'épanouir à son rythme.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
     <!-- FAQ Section -->
     <section id="faq" class="py-20">
         <div class="container mx-auto px-4">
@@ -200,61 +260,73 @@
             <div class="max-w-3xl mx-auto space-y-4">
                 <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden">
                     <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors">
-                        <h3 class="text-xl font-bold text-mpl-ink pr-4" data-i18n="faq.q1">À partir de quel âge peut-on inscrire un enfant ?</h3>
+                        <h3 class="text-xl font-bold text-mpl-ink pr-4" data-i18n="faq.q1">Inscription</h3>
                         <svg class="faq-icon w-6 h-6 text-mpl-orange transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
                     <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a1">Nos ateliers accueillent les enfants dès 3 ans jusqu'à 12 ans, avec des groupes adaptés à chaque tranche d'âge.</p>
+                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a1">Nous accueillons les enfants dès 6 mois, accompagnés de leurs parents. La présence des parents aux ateliers est obligatoire jusqu’à 2 ans et demi.</p>
                     </div>
                 </div>
                 
                 <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden">
                     <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors">
-                        <h3 class="text-xl font-bold text-mpl-ink pr-4" data-i18n="faq.q2">Faut-il une tenue particulière ?</h3>
+                        <h3 class="text-xl font-bold text-mpl-ink pr-4" data-i18n="faq.q2">Tenue et matériel</h3>
                         <svg class="faq-icon w-6 h-6 text-mpl-orange transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
                     <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a2">Nous recommandons des vêtements confortables et des chaussures de sport. Tout le matériel est fourni.</p>
+                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a2">Pour profiter pleinement de l’atelier, votre enfant doit porter une tenue confortable. Nous fournissons tout le matériel nécessaire ainsi que les tabliers, si besoin.</p>
                     </div>
                 </div>
                 
                 <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden">
                     <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors">
-                        <h3 class="text-xl font-bold text-mpl-ink pr-4" data-i18n="faq.q3">Comment se déroule une séance type ?</h3>
+                        <h3 class="text-xl font-bold text-mpl-ink pr-4" data-i18n="faq.q3">Déroulement de l’atelier</h3>
                         <svg class="faq-icon w-6 h-6 text-mpl-orange transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
                     <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a3">Chaque séance dure 45 minutes et comprend un échauffement, des activités principales et un retour au calme.</p>
+                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a3">Les enfants sont accueillis dans une ambiance conviviale, débutant par un petit rituel ou un jeu musical pour entrer dans l’énergie du groupe. Ensuite, nous présentons les différents modules ou activités du jour, afin que chaque enfant sache ce qu’il va découvrir et créer.</p>
                     </div>
                 </div>
 
                 <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden">
                     <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors">
-                        <h3 class="text-xl font-bold text-mpl-ink pr-4" data-i18n="faq.q4">Comment se déroule l'arrivée et le départ des enfants à l'atelier ?</h3>
+                        <h3 class="text-xl font-bold text-mpl-ink pr-4" data-i18n="faq.q4">Rangement et fin de séance</h3>
                         <svg class="faq-icon w-6 h-6 text-mpl-orange transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
                     <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a4">Nous vous remercions de patienter avec votre enfant jusqu'à ce que l'atelier ouvre et que l'animatrice puisse l'accueillir. Nous vous remercions d'être présent à la fin de l'atelier pour venir chercher votre enfant. Pour des raisons de sécurité, aucun départ seul ne sera autorisé sans accord écrit préalable des parents.</p>
+                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a4">Cinq minutes avant la fin, les enfants participent au rangement : remettre le matériel en ordre, ranger leur espace de travail et clôturer la séance dans le calme et la coopération.</p>
                     </div>
                 </div>
 
                 <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden">
                     <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors">
-                        <h3 class="text-xl font-bold text-mpl-ink pr-4" data-i18n="faq.q5">Concernant les paiements et réservations</h3>
+                        <h3 class="text-xl font-bold text-mpl-ink pr-4" data-i18n="faq.q5">Accueil et départ</h3>
                         <svg class="faq-icon w-6 h-6 text-mpl-orange transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
                     <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a5">Le paiement et la réservation des ateliers, stages se fait directement en ligne. En cas d'impossibilité de régler par ce moyen, merci de nous contacter par e-mail afin de trouver une solution adaptée.</p>
+                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a5">Nous vous remercions de patienter avec votre enfant jusqu’à l’ouverture de l’atelier, afin que l’animatrice puisse l’accueillir. Votre présence est également requise à la fin pour venir chercher votre enfant. Pour des raisons de sécurité, aucun départ seul ne sera autorisé sans accord écrit préalable des parents.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <h3 class="text-xl font-bold text-mpl-ink pr-4" data-i18n="faq.q6">Réservation et paiement</h3>
+                        <svg class="faq-icon w-6 h-6 text-mpl-orange transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a6">Le paiement et la réservation des ateliers ou stages se font directement en ligne. En cas d’impossibilité, merci de nous contacter par e-mail afin de trouver une solution adaptée.</p>
                     </div>
                 </div>
             </div>
@@ -316,7 +388,7 @@
                                     </div>
                                     <div>
                                         <h4 class="font-bold text-lg mb-1" data-i18n="contact.hours">Horaires</h4>
-                                        <p class="text-white text-opacity-90">MER-SAM 9h-18h30<br>DIM 9h-12h30</p>
+                                        <p class="text-white text-opacity-90">MER-SAM 9h-19h<br>DIM 9h-13h</p>
                                     </div>
                                 </div>
                             </div>
