@@ -222,7 +222,7 @@ moveandplaykids/
 ## 🌐 Liens
 
 - **Site**: https://moveandplaykids.com
-- **Réservation**: https://booking.myrezapp.com/fr/online/booking/calendar/21324/moveplay
+- **Réservation**: https://booking.myrezapp.com/fr/online/booking/calendar/21324/move-and-play-kids
 - **Email**: contact@moveandplaykids.fr
 - **Téléphone**: 0472 75 07 66
 
