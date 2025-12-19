@@ -175,7 +175,10 @@
                         <h4 class="text-xl font-bold text-mpl-ink mb-4" data-i18n="stages.info.practical.title">Infos pratiques :</h4>
                         <p class="text-gray-700 mb-2">📅 <strong data-i18n="stages.info.practical.dates">Dates</strong> : <span data-i18n="stages.info.practical.dates.value">vacances scolaire</span></p>
                         <p class="text-gray-700 mb-2">🕒 <strong data-i18n="stages.info.practical.hours">Horaires</strong> : <span data-i18n="stages.info.practical.hours.value">De 8h à 17h</span></p>
-                        <p class="text-gray-700">📍 <strong data-i18n="stages.info.practical.location">Lieu</strong> : <span data-i18n="stages.info.practical.location.value">chaussée de roodebeek 128 WST</span></p>
+                        <p class="text-gray-700 mb-2">📍 <strong data-i18n="stages.info.practical.location">Lieu</strong> : <span data-i18n="stages.info.practical.location.value">chaussée de roodebeek 128 WST</span></p>
+                        <p class="text-gray-700 mb-2">💰 <strong data-i18n="stages.info.practical.price">Prix</strong> :</p>
+                        <p class="text-gray-700 ml-6 mb-1">• <span data-i18n="stages.info.practical.price.week">200€ le stage (semaine)</span></p>
+                        <p class="text-gray-700 ml-6">• <span data-i18n="stages.info.practical.price.day">40€ la journée</span></p>
                     </div>
                 </div>
             </div>
@@ -187,6 +190,46 @@
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
+                <!-- Mystery Stage Card -->
+                <div class="stage-card relative overflow-hidden">
+                    <div class="card-image bg-gradient-to-br from-purple-400 via-pink-400 to-orange-400 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <div class="text-6xl mb-4">❓</div>
+                                <div class="text-2xl font-bold">MYSTÈRE</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="mb-2">
+                            <span class="inline-block bg-purple-100 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full" data-i18n="stages.mystere.subtitle">Décidé par les enfants</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-mpl-ink mb-3" data-i18n="stages.mystere.title">Stage Mystère</h3>
+                        <div class="space-y-2 text-sm text-gray-600 mb-4">
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="stages.dates">Dates:</span>
+                                <span data-i18n="stages.mystere.dates">23-27 fév & 02-06 mars</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.age">Âge:</span>
+                                <span data-i18n="stages.mystere.age">De 4 à 8 ans</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.time">Horaire:</span>
+                                <span data-i18n="stages.mystere.time">8h - 17h</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
+                                <span data-i18n="stages.mystere.location">1200 Woluwe Saint Lambert</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm italic" data-i18n="stages.mystere.description">Un stage surprise dont le thème sera choisi par les enfants ! Restez connectés pour découvrir l'aventure qui les attend...</p>
+                        <div class="flex space-x-2">
+                            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/move-and-play-kids" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">Calendrier</a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Stage 4: Aventures dans l'océan -->
                 <div class="stage-card">
                     <div class="card-image bg-gradient-to-br from-blue-300 to-cyan-400">
@@ -210,10 +253,6 @@
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
                                 <span data-i18n="stages.ocean.location">1200 Woluwe Saint Lambert</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
-                                <span data-i18n="stages.ocean.places">150euros / stage</span>
                             </div>
                         </div>
                         <div class="flex space-x-2">
@@ -246,10 +285,6 @@
                                 <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
                                 <span data-i18n="stages.contes.location">1200 Woluwe Saint Lambert</span>
                             </div>
-                            <div class="flex items-center">
-                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
-                                <span data-i18n="stages.contes.places">150euros / stage</span>
-                            </div>
                         </div>
                         <div class="flex space-x-2">
                             <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/move-and-play-kids" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">Calendrier</a>
@@ -280,10 +315,6 @@
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
                                 <span data-i18n="stages.space.location">1200 Woluwe Saint Lambert</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
-                                <span data-i18n="stages.space.places">180€ / stage</span>
                             </div>
                         </div>
                         <div class="flex space-x-2">
@@ -316,10 +347,6 @@
                                 <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
                                 <span data-i18n="stages.air.location">1200 Woluwe Saint Lambert</span>
                             </div>
-                            <div class="flex items-center">
-                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
-                                <span data-i18n="stages.air.places">180€ / stage</span>
-                            </div>
                         </div>
                         <div class="flex space-x-2">
                             <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/move-and-play-kids" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">Calendrier</a>
@@ -350,10 +377,6 @@
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
                                 <span data-i18n="stages.savane.location">1200 Woluwe Saint Lambert</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
-                                <span data-i18n="stages.savane.places">180€ / stage</span>
                             </div>
                         </div>
                         <div class="flex space-x-2">
@@ -386,10 +409,6 @@
                                 <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
                                 <span data-i18n="stages.marmitton.location">1200 Woluwe Saint Lambert</span>
                             </div>
-                            <div class="flex items-center">
-                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
-                                <span data-i18n="stages.marmitton.places">195euros / stage</span>
-                            </div>
                         </div>
                         <div class="flex space-x-2">
                             <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/move-and-play-kids" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">Calendrier</a>
@@ -420,10 +439,6 @@
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
                                 <span data-i18n="stages.dinos.location">1200 Woluwe Saint Lambert</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
-                                <span data-i18n="stages.dinos.places">180€ / stage</span>
                             </div>
                         </div>
                         <div class="flex space-x-2">
@@ -456,10 +471,6 @@
                                 <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
                                 <span data-i18n="stages.creakids.location">1200 Woluwe Saint Lambert</span>
                             </div>
-                            <div class="flex items-center">
-                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
-                                <span data-i18n="stages.creakids.places">195euros / stage</span>
-                            </div>
                         </div>
                         <div class="flex space-x-2">
                             <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/move-and-play-kids" target="_blank" class="btn-mpl-primary flex-1 inline-block text-center" data-i18n="stages.register">Calendrier</a>
@@ -490,10 +501,6 @@
                             <div class="flex items-center">
                                 <span class="font-medium w-20" data-i18n="ateliers.location">Lieu:</span>
                                 <span data-i18n="stages.banquise.location">1200 Woluwe Saint Lambert</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="font-medium w-20" data-i18n="ateliers.price">Prix:</span>
-                                <span data-i18n="stages.banquise.places">150€ / stage</span>
                             </div>
                         </div>
                         <div class="flex space-x-2">
