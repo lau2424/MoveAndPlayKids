@@ -156,4 +156,4 @@ Le site est optimisé pour mobile:
 
 **Dernière mise à jour**: 26 novembre 2024
 **Domaine**: moveandplaykids.com
-**Contact**: contact@moveandplaykids.fr
+**Contact**: contact.moveandplay@gmail.com

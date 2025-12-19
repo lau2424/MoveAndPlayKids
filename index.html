@@ -41,66 +41,6 @@
     <link rel="icon" type="image/png" href="assets/LogoM&P.webp">
 </head>
 <body class="bg-white text-gray-800">
-    <!-- Opening Announcement Popup -->
-    <div id="openingPopup" class="opening-popup">
-        <div class="opening-popup-content">
-            <button id="closePopup" class="opening-popup-close" aria-label="Fermer">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-            
-            <div class="opening-popup-header">
-                <div class="opening-popup-icon">🎉</div>
-                <h2 class="opening-popup-title">Notre structure ouvre ses portes !</h2>
-            </div>
-            
-            <div class="opening-popup-body">
-                <p class="opening-popup-intro">Pour cette occasion, nous vous proposons d'inscrire vos enfants à</p>
-                
-                <div class="opening-popup-highlight">
-                    <h3>"L'Atelier Découverte"</h3>
-                    <p class="opening-popup-validity">(valable uniquement pour la fin de l'année 2025)</p>
-                </div>
-                
-                <div class="opening-popup-details">
-                    <p class="opening-popup-description">
-                        Cet atelier lui donne accès à l'ensemble des ateliers :
-                    </p>
-                    <ul class="opening-popup-list">
-                        <li>✨ Motricité libre</li>
-                        <li>🎭 Imaginaire</li>
-                        <li>🎨 Créatif</li>
-                        <li>🍽️ Gustatif</li>
-                    </ul>
-                </div>
-                
-                <div class="opening-popup-info">
-                    <div class="opening-popup-info-item">
-                        <strong>👶 Âge :</strong> À partir de 4 ans
-                    </div>
-                    <div class="opening-popup-info-item">
-                        <strong>📍 Places :</strong> Limitées
-                    </div>
-                </div>
-                
-                <div class="opening-popup-options">
-                    <p><strong>Formules d'inscription :</strong></p>
-                    <div class="opening-popup-options-grid">
-                        <span class="opening-popup-option">1h30 heure</span>
-                        <span class="opening-popup-option">Demi journée et plus, nous contacter</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="opening-popup-footer">
-                <a href="https://booking.myrezapp.com/fr/online/booking/step1/21324/99523" target="_blank" class="btn-mpl-primary opening-popup-cta">
-                    S'inscrire maintenant
-                </a>
-            </div>
-        </div>
-    </div>
-
     <!-- Header -->
     <header class="sticky top-0 z-40 bg-white shadow-md">
         <nav class="container mx-auto px-4 py-4">
@@ -119,6 +59,8 @@
                     <a href="projet.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.projet">Projet</a>
                     <a href="ateliers.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.ateliers">Ateliers</a>
                     <a href="stages.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.stages">Stages</a>
+                    <a href="anniversaire.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.anniversaire">Anniversaire</a>
+                    <a href="pass.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.pass">Cartes Pass</a>
                     <a href="#contact" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.contact">Contact</a>
                     
                     <!-- Language Switcher -->
@@ -149,7 +91,9 @@
                     <a href="index.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.home">Accueil</a>
                     <a href="ateliers.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.ateliers">Ateliers</a>
                     <a href="stages.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.stages">Stages</a>
+                    <a href="anniversaire.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.anniversaire">Anniversaire</a>
                     <a href="projet.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.projet">Projet</a>
+                    <a href="pass.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.pass">Cartes Pass</a>
                     <a href="#contact" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.contact">Contact</a>
                     
                     <!-- Language Switcher Mobile -->
@@ -181,12 +125,8 @@
         <div class="hero-content absolute inset-0 flex items-center justify-center text-center text-white">
             <div class="max-w-4xl mx-auto px-4">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight" data-i18n="hero.title">
-                    <!--Bouger, jouer, grandir — des ateliers qui donnent le sourire -->
-                    Nous vous invitons aux portes ouvertes le SAMEDI 13 DECEMBRE 2025 et DIMANCHE 14 DECEMBRE 2025
-                </h1>
-                <p class="text-xl md:text-2xl mb-8 opacity-90" data-i18n="hero.subtitle">
-                    Des activités ludiques et éducatives pour enfants de 3 à 12 ans
-                </p>
+                    <!--Bouger, jouer, grandir — des ateliers qui donnent le sourire -->                </h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90" data-i18n="hero.subtitle"></p>
             </div>
         </div>
     </section>
@@ -196,30 +136,109 @@
         <div class="container mx-auto px-4">            
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Workshops -->
-                <div class="text-center p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <a href="ateliers.html" class="text-center p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-105 block">
                     <div class="w-16 h-16 bg-mpl-yellow rounded-full flex items-center justify-center mx-auto mb-6">
                         <span class="text-3xl">🎯</span>
                     </div>
                     <h3 class="text-2xl font-bold text-mpl-ink mb-4" data-i18n="services.workshops">Ateliers Hebdomadaires</h3>
                     <p class="text-gray-600" data-i18n="services.workshops.desc">Des séances régulières pour développer la motricité et la créativité</p>
-                </div>
+                </a>
                 
                 <!-- Camps -->
-                <div class="text-center p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <a href="stages.html" class="text-center p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-105 block">
                     <div class="w-16 h-16 bg-mpl-sky rounded-full flex items-center justify-center mx-auto mb-6">
                         <span class="text-3xl">🌞</span>
                     </div>
                     <h3 class="text-2xl font-bold text-mpl-ink mb-4" data-i18n="services.camps">Stages Vacances</h3>
                     <p class="text-gray-600" data-i18n="services.camps.desc">Des programmes intensifs pendant les vacances scolaires</p>
-                </div>
+                </a>
                 
                 <!-- Events -->
-                <div class="text-center p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <a href="anniversaire.html" class="text-center p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-105 block">
                     <div class="w-16 h-16 bg-mpl-orange rounded-full flex items-center justify-center mx-auto mb-6">
                         <span class="text-3xl">🎉</span>
                     </div>
                     <h3 class="text-2xl font-bold text-mpl-ink mb-4" data-i18n="services.events">Événements Spéciaux</h3>
                     <p class="text-gray-600" data-i18n="services.events.desc">Anniversaires, fêtes et animations sur mesure</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Grid Section -->
+    <section class="bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+            <h2 class="text-base/7 font-semibold text-mpl-orange" data-i18n="bento.subtitle">Découvrez nos espaces</h2>
+            <p class="mt-2 max-w-lg text-4xl font-semibold tracking-tight text-pretty text-mpl-ink sm:text-5xl" data-i18n="bento.title">Un environnement pensé pour l'épanouissement</p>
+            <div class="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+                <!-- Card 1 -->
+                <div class="relative lg:col-span-3">
+                    <div class="absolute inset-0 rounded-lg bg-white max-lg:rounded-t-4xl lg:rounded-tl-4xl"></div>
+                    <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
+                        <img src="assets/MoveAndPlayKids_Home1.webp" alt="Espace psychomoteur" class="h-80 object-cover object-center" />
+                        <div class="p-10 pt-4">
+                            <h3 class="text-sm/4 font-semibold text-mpl-orange" data-i18n="bento.card1.tag">Psychomotricité</h3>
+                            <p class="mt-2 text-lg font-medium tracking-tight text-mpl-ink" data-i18n="bento.card1.title">Espace de mouvement</p>
+                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600" data-i18n="bento.card1.desc">Un espace sécurisé et stimulant pour développer la motricité globale et la confiance en soi.</p>
+                        </div>
+                    </div>
+                    <div class="pointer-events-none absolute inset-0 rounded-lg shadow-sm ring-1 ring-black/5 max-lg:rounded-t-4xl lg:rounded-tl-4xl"></div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="relative lg:col-span-3">
+                    <div class="absolute inset-0 rounded-lg bg-white lg:rounded-tr-4xl"></div>
+                    <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
+                        <img src="assets/MoveAndPlayKids_Home2.webp" alt="Atelier créatif" class="h-80 object-cover object-center lg:object-right" />
+                        <div class="p-10 pt-4">
+                            <h3 class="text-sm/4 font-semibold text-mpl-orange" data-i18n="bento.card2.tag">Créativité</h3>
+                            <p class="mt-2 text-lg font-medium tracking-tight text-mpl-ink" data-i18n="bento.card2.title">Atelier artistique</p>
+                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600" data-i18n="bento.card2.desc">Des activités créatives pour stimuler l'imagination et l'expression artistique des enfants.</p>
+                        </div>
+                    </div>
+                    <div class="pointer-events-none absolute inset-0 rounded-lg shadow-sm ring-1 ring-black/5 lg:rounded-tr-4xl"></div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="relative lg:col-span-2">
+                    <div class="absolute inset-0 rounded-lg bg-white lg:rounded-bl-4xl"></div>
+                    <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
+                        <img src="assets/MoveAndPlayKids_Home3.webp" alt="Motricité" class="h-80 object-cover object-center" />
+                        <div class="p-10 pt-4">
+                            <h3 class="text-sm/4 font-semibold text-mpl-orange" data-i18n="bento.card3.tag">Motricité</h3>
+                            <p class="mt-2 text-lg font-medium tracking-tight text-mpl-ink" data-i18n="bento.card3.title">Développement moteur</p>
+                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600" data-i18n="bento.card3.desc">Des parcours et jeux pour développer la coordination et l'équilibre.</p>
+                        </div>
+                    </div>
+                    <div class="pointer-events-none absolute inset-0 rounded-lg shadow-sm ring-1 ring-black/5 lg:rounded-bl-4xl"></div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="relative lg:col-span-2">
+                    <div class="absolute inset-0 rounded-lg bg-white"></div>
+                    <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
+                        <img src="assets/MoveAndPlayKids_Home4.webp" alt="Jeux sensoriels" class="h-80 object-cover object-center" />
+                        <div class="p-10 pt-4">
+                            <h3 class="text-sm/4 font-semibold text-mpl-orange" data-i18n="bento.card4.tag">Sensoriel</h3>
+                            <p class="mt-2 text-lg font-medium tracking-tight text-mpl-ink" data-i18n="bento.card4.title">Exploration sensorielle</p>
+                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600" data-i18n="bento.card4.desc">Des activités pour éveiller tous les sens et favoriser le développement cognitif.</p>
+                        </div>
+                    </div>
+                    <div class="pointer-events-none absolute inset-0 rounded-lg shadow-sm ring-1 ring-black/5"></div>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="relative lg:col-span-2">
+                    <div class="absolute inset-0 rounded-lg bg-white max-lg:rounded-b-4xl lg:rounded-br-4xl"></div>
+                    <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
+                        <img src="assets/MoveAndPlayKids_Home6.webp" alt="Espace convivial" class="h-80 object-cover object-center" />
+                        <div class="p-10 pt-4">
+                            <h3 class="text-sm/4 font-semibold text-mpl-orange" data-i18n="bento.card5.tag">Convivialité</h3>
+                            <p class="mt-2 text-lg font-medium tracking-tight text-mpl-ink" data-i18n="bento.card5.title">Espace accueil</p>
+                            <p class="mt-2 max-w-lg text-sm/6 text-gray-600" data-i18n="bento.card5.desc">Un lieu chaleureux pour accueillir les familles dans une atmosphère bienveillante.</p>
+                        </div>
+                    </div>
+                    <div class="pointer-events-none absolute inset-0 rounded-lg shadow-sm ring-1 ring-black/5 max-lg:rounded-b-4xl lg:rounded-br-4xl"></div>
                 </div>
             </div>
         </div>
@@ -325,7 +344,19 @@
                         </svg>
                     </button>
                     <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a6">Le paiement et la réservation des ateliers ou stages se font directement en ligne. En cas d’impossibilité, merci de nous contacter par e-mail afin de trouver une solution adaptée.</p>
+                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a6">Le paiement et la réservation des ateliers ou stages se font directement en ligne. En cas d'impossibilité, merci de nous contacter par e-mail afin de trouver une solution adaptée.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <h3 class="text-xl font-bold text-mpl-ink pr-4" data-i18n="faq.q7">Famille nombreuse</h3>
+                        <svg class="faq-icon w-6 h-6 text-mpl-orange transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 px-6 pb-6" data-i18n="faq.a7">Une remise famille est appliquée dès l'inscription du deuxième enfant : –10 %, puis –15 % à partir du troisième enfant. Pour en bénéficier, merci de nous contacter directement.</p>
                     </div>
                 </div>
             </div>
@@ -444,7 +475,10 @@
 
     <!-- Footer -->
     <footer class="bg-mpl-orange text-white py-6">
-        <div class="container mx-auto px-4 text-center">            
+        <div class="container mx-auto px-4 text-center">
+                <div class="mb-2">
+                    <a href="reglement.html" class="text-white hover:text-mpl-yellow transition-colors" data-i18n="footer.reglement">Règlement intérieur</a>
+                </div>
                 <p class="text-white" data-i18n="footer.rights">© Move And Play Kids — Tous droits réservés</p>
                 <p class="text-white">Made with <span class="text-mpl-orange">❤️</span> by Lau</p>
         </div>
@@ -509,10 +543,24 @@
         "@type": "ContactPoint",
         "telephone": "+32472750766",
         "contactType": "customer service",
-        "email": "contact@moveandplaykids.fr",
+        "email": "contact.moveandplay@gmail.com",
         "availableLanguage": ["French", "English"]
       }
     }
     </script>
+    
+    <!-- Floating Social Media Icons -->
+    <div class="social-float">
+        <a href="https://www.facebook.com/people/MOVE-PLAY-KIDS/61584327753693/" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/move_and_play_kids/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+        </a>
+    </div>
 </body>
 </html>

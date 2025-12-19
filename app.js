@@ -26,7 +26,6 @@ class MoveAndPlayApp {
     this.initializeFilters();
     this.initializeModals();
     this.initializeFAQ();
-    this.initializeOpeningPopup();
     this.updateLanguage();
   }
   
@@ -378,56 +377,6 @@ class MoveAndPlayApp {
       modal.classList.remove('active');
       document.body.style.overflow = '';
     }
-  }
-  
-  // ===== OPENING POPUP =====
-  initializeOpeningPopup() {
-    const popup = document.getElementById('openingPopup');
-    const closeButton = document.getElementById('closePopup');
-    
-    if (!popup) return;
-    
-    // Check if popup has been closed before
-    const popupClosed = sessionStorage.getItem('openingPopupClosed');
-    
-    // Show popup only on index.html and if not closed in this session
-    const isIndexPage = window.location.pathname.endsWith('index.html') || 
-                        window.location.pathname.endsWith('/') ||
-                        window.location.pathname === '';
-    
-    if (isIndexPage && !popupClosed) {
-      // Show popup after a short delay
-      setTimeout(() => {
-        popup.classList.add('show');
-        document.body.style.overflow = 'hidden';
-      }, 500);
-    }
-    
-    // Close popup function
-    const closePopup = () => {
-      popup.classList.remove('show');
-      document.body.style.overflow = '';
-      sessionStorage.setItem('openingPopupClosed', 'true');
-    };
-    
-    // Close button click
-    if (closeButton) {
-      closeButton.addEventListener('click', closePopup);
-    }
-    
-    // Close on backdrop click
-    popup.addEventListener('click', (e) => {
-      if (e.target === popup) {
-        closePopup();
-      }
-    });
-    
-    // Close on Escape key
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && popup.classList.contains('show')) {
-        closePopup();
-      }
-    });
   }
   
   // ===== UTILITY METHODS =====
