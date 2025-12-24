@@ -11,7 +11,9 @@ const translations = {
     
     // Hero Section
     'hero.title': 'Bouger, jouer, grandir avec des ateliers qui donnent le sourire',
-    'hero.subtitle': 'des activités extra scolaire pour les enfants de 6 mois à 8 ans',
+    //'hero.subtitle': 'des activités extra scolaire pour les enfants de 6 mois à 8 ans',
+    'hero.subtitle': 'Nous faisons des portes ouvertes le 3 et 4 janvier de 9h à 15h, venez nombreux !',
+
     'hero.cta1': 'Calendrier',
     'hero.cta2': 'Voir les stages',
     
@@ -45,7 +47,7 @@ const translations = {
     'bento.card3.desc': 'Des parcours et jeux pour développer la coordination et l\'équilibre.',
     'bento.card4.tag': 'Sensoriel',
     'bento.card4.title': 'Exploration sensorielle',
-    'bento.card4.desc': 'Des activités pour éveiller tous les sens et favoriser l\'exploration des saveurs.',
+    'bento.card4.desc': 'Des activités pour éveiller tous les sens et favoriser l\'exploration culinaire.',
     'bento.card5.tag': 'Convivialité',
     'bento.card5.title': 'Espace accueil',
     'bento.card5.desc': 'Un lieu chaleureux pour accueillir les familles dans une atmosphère bienveillante.',
@@ -277,7 +279,7 @@ const translations = {
     'passes.card50.badge': 'Découverte',
     'passes.card50.subtitle': 'Le format idéal pour tester nos ateliers et faire plaisir',
     'passes.card50.perk1': '3 séances de l\'atelier Baby, Psychomoteur, Imaginaire',
-    'passes.card50.perk2': 'ou 2 séances d\'atelier Créatif ou Dégustatif',
+    'passes.card50.perk2': 'ou 2 séances d\'atelier Créatif ou Gustatif',
     'passes.card50.perk3': 'ou 1,5 jours de Stage pendant les vacances',
     'passes.card100.badge': 'Aventure',
     'passes.card100.subtitle': 'Utilisable par tous les enfants de la famille',
@@ -289,7 +291,7 @@ const translations = {
     'passes.card200.subtitle': 'Permet de profiter pleinement de toutes nos activités.',
     'passes.card200.perk1': 'accès à tous nos ateliers',
     'passes.card200.perk2': 'ou 1 semaine de stage pendant les vacances',
-    'passes.card200.perk3': 'ou fête d\'anniversaire clef en main',
+    'passes.card200.perk3': 'ou fête d\'anniversaire clé en main',
     'passes.card.cta': 'Acheter cette carte',
     'passes.steps.badge': 'Comment ça marche ?',
     'passes.steps.title': 'Votre pass en trois clics',
@@ -354,6 +356,7 @@ const translations = {
     'anniversaire.intro': 'Offrez à votre enfant un anniversaire magique ! Jeux et activités sont au rendez-vous pour partager un moment joyeux avec ses amis. Un animateur dédié accompagne les enfants dans un espace spécialement conçu pour eux, pour une fête pleine de rires et de découvertes.',
     'anniversaire.formula.title': 'Formule "Anniversaire clé en main"',
     'anniversaire.formula.subtitle': 'Pour un groupe de 8 enfants',
+    'anniversaire.formula.extra': 'Possibilité d’accueillir plus de 8 enfants avec un supplément de 30 € par enfant.',
     'anniversaire.included.title': 'Ce qui est inclus',
     'anniversaire.included.item1': 'Privatisation complète des lieux pendant 2h30',
     'anniversaire.included.item2': 'Cuisine entièrement à disposition (réfrigérateur, plaque électrique, four…)',
@@ -367,7 +370,7 @@ const translations = {
     'anniversaire.themes.jungle': '• Animaux de la jungle',
     'anniversaire.themes.space': '• Espace',
     'anniversaire.tobring.title': 'À fournir',
-    'anniversaire.tobring.item1': 'Le gâteau d\'anniversaire',
+    'anniversaire.tobring.item1': 'Le gâteau d\'anniversaire + bougies',
     'anniversaire.tobring.item2': 'Les boissons pour les enfants',
     'anniversaire.cta.text': 'Pour plus d\'informations et réservation, veuillez prendre contact avec nous',
     'anniversaire.cta.button': 'Nous contacter',
@@ -386,7 +389,9 @@ const translations = {
     
     // Hero Section
     'hero.title': 'Move, play, grow with workshops that bring smiles',
-    'hero.subtitle': 'extracurricular activities for children from 6 months to 8 years old',
+    //'hero.subtitle': 'extracurricular activities for children from 6 months to 8 years old',
+    'hero.subtitle': 'We open our doors on January 3 and 4 from 9am to 3pm, come with many !',
+
     'hero.cta1': 'Book',
     'hero.cta2': 'See camps',
     
@@ -420,7 +425,7 @@ const translations = {
     'bento.card3.desc': 'Courses and games to develop coordination and balance.',
     'bento.card4.tag': 'Sensory',
     'bento.card4.title': 'Sensory exploration',
-    'bento.card4.desc': 'Activities to awaken all senses and encourage flavor exploration.',
+    'bento.card4.desc': 'Activities to awaken all senses and encourage culinary exploration.',
     'bento.card5.tag': 'Welcoming',
     'bento.card5.title': 'Welcome space',
     'bento.card5.desc': 'A warm place to welcome families in a caring atmosphere.',
@@ -727,6 +732,7 @@ const translations = {
     'anniversaire.intro': 'Give your child a magical birthday! Games and activities await to share a joyful moment with friends. A dedicated facilitator accompanies the children in a space specially designed for them, for a party full of laughter and discoveries.',
     'anniversaire.formula.title': 'All-Inclusive Birthday Package',
     'anniversaire.formula.subtitle': 'For a group of 8 children',
+    'anniversaire.formula.extra': 'Option to host more than 8 children with an extra fee of €30 per child.',
     'anniversaire.included.title': 'What\'s included',
     'anniversaire.included.item1': 'Complete privatization of the venue for 2h30',
     'anniversaire.included.item2': 'Full access to kitchen (refrigerator, electric stove, oven…)',
@@ -740,7 +746,7 @@ const translations = {
     'anniversaire.themes.jungle': '• Jungle animals',
     'anniversaire.themes.space': '• Space',
     'anniversaire.tobring.title': 'To provide',
-    'anniversaire.tobring.item1': 'The birthday cake',
+    'anniversaire.tobring.item1': 'The birthday cake + candles',
     'anniversaire.tobring.item2': 'Drinks for the children',
     'anniversaire.cta.text': 'For more information and booking, please contact us',
     'anniversaire.cta.button': 'Contact us',
