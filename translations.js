@@ -46,7 +46,7 @@ const translations = {
     'bento.card3.title': 'Développement moteur',
     'bento.card3.desc': 'Des parcours et jeux pour développer la coordination et l\'équilibre.',
     'bento.card4.tag': 'Sensoriel',
-    'bento.card4.title': 'Exploration sensorielle',
+    'bento.card4.title': 'Exploration culinaire',
     'bento.card4.desc': 'Des activités pour éveiller tous les sens et favoriser l\'exploration culinaire.',
     'bento.card5.tag': 'Convivialité',
     'bento.card5.title': 'Espace accueil',
@@ -198,7 +198,7 @@ const translations = {
     'stages.marmitton.time': '8h - 17h',
     'stages.marmitton.location': '1200 Woluwe Saint Lambert',
     'stages.creakids.title': 'Créa Kids',
-    'stages.creakids.dates': '10 au 14 août',
+    'stages.creakids.dates': '24 au 28 août',
     'stages.creakids.age': '5-7 ans',
     'stages.creakids.time': '8h - 17h',
     'stages.creakids.location': '1200 Woluwe Saint Lambert',
@@ -259,6 +259,7 @@ const translations = {
     'projet.cta.subtitle': 'Offrez à votre enfant un espace d\'épanouissement unique',
     'projet.cta.ateliers': 'Découvrir les ateliers',
     'projet.cta.book': 'Réserver maintenant',
+    'projet.download.pdf': 'Télécharger notre projet pédagogique',
 
     // Passes Page
     'passes.hero.badge': 'Pass Move And Play Kids',
@@ -424,7 +425,7 @@ const translations = {
     'bento.card3.title': 'Motor development',
     'bento.card3.desc': 'Courses and games to develop coordination and balance.',
     'bento.card4.tag': 'Sensory',
-    'bento.card4.title': 'Sensory exploration',
+    'bento.card4.title': 'Culinary exploration',
     'bento.card4.desc': 'Activities to awaken all senses and encourage culinary exploration.',
     'bento.card5.tag': 'Welcoming',
     'bento.card5.title': 'Welcome space',
@@ -574,7 +575,7 @@ const translations = {
     'stages.marmitton.time': '8am to 5pm',
     'stages.marmitton.location': '1200 Woluwe Saint Lambert',
     'stages.creakids.title': 'Creative Kids',
-    'stages.creakids.dates': 'Aug 10 to 14',
+    'stages.creakids.dates': 'Aug 24 to 28',
     'stages.creakids.age': '5-7 years',
     'stages.creakids.time': '8am to 5pm',
     'stages.creakids.location': '1200 Woluwe Saint Lambert',
@@ -635,6 +636,7 @@ const translations = {
     'projet.cta.subtitle': 'Give your child a unique space for growth',
     'projet.cta.ateliers': 'Discover the workshops',
     'projet.cta.book': 'Book now',
+    'projet.download.pdf': 'Download our educational project',
 
     // Passes Page
     'passes.hero.badge': 'Move And Play Kids Pass',
