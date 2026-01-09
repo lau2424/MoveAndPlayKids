@@ -54,12 +54,13 @@
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.home">Accueil</a>
-                    <a href="projet.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.projet">Projet</a>
+
+
                     <a href="ateliers.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.ateliers">Ateliers</a>
                     <a href="stages.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.stages">Stages</a>
                     <a href="anniversaire.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.anniversaire">Anniversaire</a>
                     <a href="pass.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium active" data-i18n="nav.pass">Cartes Pass</a>
+                    <a href="projet.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.projet">Projet</a>
                     <a href="index.html#contact" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.contact">Contact</a>
 
                     <!-- Language Switcher -->
@@ -87,12 +88,13 @@
             <!-- Mobile Navigation -->
             <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200">
                 <div class="flex flex-col space-y-3 pt-4">
-                    <a href="index.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.home">Accueil</a>
+
+
                     <a href="ateliers.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.ateliers">Ateliers</a>
                     <a href="stages.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.stages">Stages</a>
                     <a href="anniversaire.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.anniversaire">Anniversaire</a>
-                    <a href="projet.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.projet">Projet</a>
                     <a href="pass.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium active" data-i18n="nav.pass">Cartes Pass</a>
+                    <a href="projet.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.projet">Projet</a>
                     <a href="index.html#contact" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.contact">Contact</a>
 
                     <!-- Language Switcher Mobile -->
@@ -131,79 +133,59 @@
                     <h2 class="text-3xl font-bold text-mpl-ink mb-4" data-i18n="passes.cards.title">Choisissez la carte Pass adaptée</h2>
                     <p class="text-lg text-gray-600" data-i18n="passes.cards.subtitle">Chaque carte inclut un code unique à utiliser lors de la réservation en ligne.</p>
                 </div>
-                <div class="grid gap-8 md:grid-cols-3">
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
                     <!-- 60€ Card -->
                     <div class="relative flex flex-col h-full p-8 bg-white rounded-3xl shadow-lg border border-transparent hover:border-mpl-yellow transition-all">
                         <div class="mb-6">
-                            <p class="text-sm uppercase tracking-wide text-gray-500" data-i18n="passes.card50.badge">Découverte</p>
-                            <p class="text-4xl font-bold text-mpl-ink">60€ +5€ offert</p>
-                            <p class="mt-2 text-gray-600" data-i18n="passes.card50.subtitle">Parfait pour offrir une première immersion</p>
+                            <p class="text-sm uppercase tracking-wide text-gray-500" data-i18n="passes.card60.badge">Découverte</p>
+                            <p class="text-4xl font-bold text-mpl-ink">60€</p>
                         </div>
-                        <ul class="space-y-3 text-gray-700 flex-1">
-                            <li class="flex items-start">
-                                <span class="text-mpl-orange mr-2">•</span>
-                                <span data-i18n="passes.card50.perk1">Accès à un atelier ou une expérience découverte</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-mpl-orange mr-2">•</span>
-                                <span data-i18n="passes.card50.perk2">Idéal pour un cadeau de dernière minute</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-mpl-orange mr-2">•</span>
-                                <span data-i18n="passes.card50.perk3">Envoi d'un visuel à imprimer</span>
-                            </li>
-                        </ul>
-                        <a href="https://booking.myrezapp.com/fr/online/order/step1/21324/7225" target="_blank" class="btn-mpl-primary w-full mt-8" data-i18n="passes.card.cta">Acheter cette carte</a>
+                        <a href="https://booking.myrezapp.com/fr/online/order/step1/21324/7227" target="_blank" class="btn-mpl-primary w-full mt-auto" data-i18n="passes.card.cta">Acheter cette carte</a>
                     </div>
 
                     <!-- 100€ Card -->
-                    <div class="relative flex flex-col h-full p-8 bg-white rounded-3xl shadow-2xl border-2 border-mpl-orange">
-                        <span class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-semibold bg-mpl-orange text-white" data-i18n="passes.card100.popular">La plus offerte</span>
+                    <div class="relative flex flex-col h-full p-8 bg-white rounded-3xl shadow-lg border border-transparent hover:border-mpl-orange transition-all">
                         <div class="mb-6">
-                            <p class="text-sm uppercase tracking-wide text-gray-500" data-i18n="passes.card100.badge">Moments multiples</p>
-                            <p class="text-4xl font-bold text-mpl-ink">150€ +15€ offert</p>
-                            <p class="mt-2 text-gray-600" data-i18n="passes.card100.subtitle">Deux ateliers ou un stage thématique</p>
+                            <p class="text-sm uppercase tracking-wide text-gray-500" data-i18n="passes.card100.badge">Essentiel</p>
+                            <p class="text-4xl font-bold text-mpl-ink">100€</p>
                         </div>
-                        <ul class="space-y-3 text-gray-700 flex-1">
-                            <li class="flex items-start">
-                                <span class="text-mpl-orange mr-2">•</span>
-                                <span data-i18n="passes.card100.perk1">Accès multi-activités sur l'année</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-mpl-orange mr-2">•</span>
-                                <span data-i18n="passes.card100.perk2">Idéal pour frères et sœurs</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-mpl-orange mr-2">•</span>
-                                <span data-i18n="passes.card100.perk3">Mention personnalisée pour la carte</span>
-                            </li>
-                        </ul>
-                        <a href="https://booking.myrezapp.com/fr/online/order/step1/21324/7226" target="_blank" class="btn-mpl-primary w-full mt-8" data-i18n="passes.card.cta">Acheter cette carte</a>
+                        <a href="https://booking.myrezapp.com/fr/online/order/step1/21324/7259" target="_blank" class="btn-mpl-primary w-full mt-auto" data-i18n="passes.card.cta">Acheter cette carte</a>
+                    </div>
+
+                    <!-- 150€ Card -->
+                    <div class="relative flex flex-col h-full p-8 bg-white rounded-3xl shadow-2xl border-2 border-mpl-orange">
+                        <div class="mb-6">
+                            <p class="text-sm uppercase tracking-wide text-gray-500" data-i18n="passes.card150.badge">Moments multiples</p>
+                            <p class="text-4xl font-bold text-mpl-ink">150€</p>
+                        </div>
+                        <a href="https://booking.myrezapp.com/fr/online/order/step1/21324/7226" target="_blank" class="btn-mpl-primary w-full mt-auto" data-i18n="passes.card.cta">Acheter cette carte</a>
                     </div>
 
                     <!-- 200€ Card -->
                     <div class="relative flex flex-col h-full p-8 bg-white rounded-3xl shadow-lg border border-transparent hover:border-mpl-sky transition-all">
                         <div class="mb-6">
                             <p class="text-sm uppercase tracking-wide text-gray-500" data-i18n="passes.card200.badge">Expérience complète</p>
-                            <p class="text-4xl font-bold text-mpl-ink">200€ +20€ offert</p>
-                            <p class="mt-2 text-gray-600" data-i18n="passes.card200.subtitle">Pour vivre un trimestre d'activités</p>
+                            <p class="text-4xl font-bold text-mpl-ink">200€</p>
                         </div>
-                        <ul class="space-y-3 text-gray-700 flex-1">
-                            <li class="flex items-start">
-                                <span class="text-mpl-orange mr-2">•</span>
-                                <span data-i18n="passes.card200.perk1">Couvre un stage complet ou plusieurs ateliers</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-mpl-orange mr-2">•</span>
-                                <span data-i18n="passes.card200.perk2">Priorité sur les ouvertures de créneaux</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-mpl-orange mr-2">•</span>
-                                <span data-i18n="passes.card200.perk3">Accompagnement personnalisé pour réserver</span>
-                            </li>
-                        </ul>
-                        <a href="https://booking.myrezapp.com/fr/online/order/step1/21324/7225" target="_blank" class="btn-mpl-primary w-full mt-8" data-i18n="passes.card.cta">Acheter cette carte</a>
+                        <a href="https://booking.myrezapp.com/fr/online/order/step1/21324/7225" target="_blank" class="btn-mpl-primary w-full mt-auto" data-i18n="passes.card.cta">Acheter cette carte</a>
                     </div>
+
+                    <!-- 300€ Card -->
+                    <div class="relative flex flex-col h-full p-8 bg-white rounded-3xl shadow-lg border border-transparent hover:border-mpl-red transition-all">
+                        <div class="mb-6">
+                            <p class="text-sm uppercase tracking-wide text-gray-500" data-i18n="passes.card300.badge">Premium</p>
+                            <p class="text-4xl font-bold text-mpl-ink">300€</p>
+                        </div>
+                        <a href="https://booking.myrezapp.com/fr/online/order/step1/21324/7260" target="_blank" class="btn-mpl-primary w-full mt-auto" data-i18n="passes.card.cta">Acheter cette carte</a>
+                    </div>
+                </div>
+                
+                <!-- Pass Explanation -->
+                <div class="max-w-3xl mx-auto mt-12 p-6 bg-mpl-ink2 rounded-2xl text-white text-center">
+                    <p class="text-lg leading-relaxed" data-i18n="passes.explanation">
+                        L'achat d'une carte pass vous permet de profiter d'un montant valable sur toutes nos prestations. 
+                        À chaque réservation, le montant est simplement déduit de votre solde, pour une utilisation flexible et sans contrainte.
+                    </p>
                 </div>
             </div>
         </section>
@@ -237,6 +219,13 @@
                                     <p class="text-gray-600" data-i18n="passes.steps.step3.desc">Choisissez les ateliers ou stages depuis notre calendrier et appliquez le code reçu.</p>
                                 </div>
                             </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl font-bold text-mpl-orange mr-4">4</span>
+                                <div>
+                                    <h3 class="text-xl font-semibold" data-i18n="passes.steps.step4.title">Montant restant automatiquement déduit</h3>
+                                    <p class="text-gray-600" data-i18n="passes.steps.step4.desc">Si le montant restant sur la carte ne correspond pas au prix d'une séance, lors d'une réservation, ce montant est automatiquement déduit du total. La différence éventuelle est alors à payer directement.</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <div class="bg-gray-50 rounded-3xl p-8 shadow-lg">
@@ -244,7 +233,7 @@
                         <dl class="space-y-5 text-gray-700">
                             <div>
                                 <dt class="font-semibold" data-i18n="passes.details.validity.title">Validité</dt>
-                                <dd data-i18n="passes.details.validity.desc">12 mois à partir de la date d'achat</dd>
+                                <dd data-i18n="passes.details.validity.desc">6 mois à partir de la date d'achat</dd>
                             </div>
                             <div>
                                 <dt class="font-semibold" data-i18n="passes.details.activities.title">Activités éligibles</dt>
@@ -284,7 +273,7 @@
                     <a href="reglement.html" class="text-white hover:text-mpl-orange transition-colors" data-i18n="footer.reglement">Règlement intérieur</a>
                 </div>
                 <p class="text-white" data-i18n="footer.rights">© Move And Play Kids — Tous droits réservés</p>
-                <p class="text-white">Made with <span class="text-mpl-orange">❤️</span> by Lau</p>
+
             </div>
         </div>
     </footer>

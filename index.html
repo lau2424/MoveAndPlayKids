@@ -55,12 +55,12 @@
                 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.home">Accueil</a>
-                    <a href="projet.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.projet">Projet</a>
+
                     <a href="ateliers.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.ateliers">Ateliers</a>
                     <a href="stages.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.stages">Stages</a>
                     <a href="anniversaire.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.anniversaire">Anniversaire</a>
                     <a href="pass.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.pass">Cartes Pass</a>
+                    <a href="projet.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.projet">Projet</a>
                     <a href="#contact" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.contact">Contact</a>
                     
                     <!-- Language Switcher -->
@@ -88,12 +88,12 @@
             <!-- Mobile Navigation -->
             <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200">
                 <div class="flex flex-col space-y-3 pt-4">
-                    <a href="index.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.home">Accueil</a>
+
                     <a href="ateliers.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.ateliers">Ateliers</a>
                     <a href="stages.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.stages">Stages</a>
                     <a href="anniversaire.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.anniversaire">Anniversaire</a>
-                    <a href="projet.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.projet">Projet</a>
                     <a href="pass.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.pass">Cartes Pass</a>
+                    <a href="projet.html" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.projet">Projet</a>
                     <a href="#contact" class="nav-link text-mpl-ink hover:text-mpl-orange font-medium" data-i18n="nav.contact">Contact</a>
                     
                     <!-- Language Switcher Mobile -->
@@ -161,6 +161,29 @@
                     <h3 class="text-2xl font-bold text-mpl-ink mb-4" data-i18n="services.events">Événements Spéciaux</h3>
                     <p class="text-gray-600" data-i18n="services.events.desc">Anniversaires, fêtes et animations sur mesure</p>
                 </a>
+            </div>
+        </div>
+        <div class="text-center mt-12">
+            <a href="https://booking.myrezapp.com/fr/online/booking/calendar/21324/move-and-play-kids" target="_blank" class="btn-mpl-primary" data-i18n="hero.cta1">Réserver</a>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 flex justify-center">
+                    <img src="assets/MoveAndPlaykids_me.webp" alt="Move And Play Kids" class="rounded-3xl shadow-2xl w-full h-auto max-w-md">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-3xl font-bold text-mpl-ink mb-6" data-i18n="philosophy.title">Notre philosophie</h2>
+                    <p class="text-lg text-gray-700 mb-4 leading-relaxed" data-i18n="philosophy.text1">
+                        Nous accompagnons chaque enfant en favorisant son autonomie, sa créativité et son épanouissement global dans un cadre sécurisant.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed" data-i18n="philosophy.text2">
+                        Il est libre d'explorer, de participer et de découvrir les ateliers à son rythme, selon ses envies et sa curiosité.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -363,6 +386,19 @@
         </div>
     </section>
 
+    <!-- Booking Calendar Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-5xl mx-auto">
+                    <h2 class="text-3xl font-bold text-mpl-ink mb-8 text-center" data-i18n="booking.calendar.title">Réservez votre atelier</h2>
+                    <div class="bg-white rounded-2xl shadow-lg p-6">
+                        <script class="mra_script_iframe" async src="https://booking.myrezapp.com/bundles/myrezappdashboard/js/Embed/myrezapp_3rdparty_iframe.js" data-key="26e81fdfae0cba5b27a8516321ac532d" data-id="mra_iframe_content_cal21324" data-lang="fr" data-mode="calendar" data-height="800px"></script>
+                        <div id="mra_iframe_content_cal21324"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
@@ -424,6 +460,7 @@
                             </div>
                         </div>
                         
+                        
                         <!-- Right: Contact Form -->
                         <div class="p-8 md:p-12">
                             <form action="https://formspree.io/f/mwpgnbwa" method="POST" class="space-y-6">
@@ -473,14 +510,14 @@
         </div>
     </section>
 
-    <!-- Footer -->
+
     <footer class="bg-mpl-orange text-white py-6">
         <div class="container mx-auto px-4 text-center">
                 <div class="mb-2">
                     <a href="reglement.html" class="text-white hover:text-mpl-yellow transition-colors" data-i18n="footer.reglement">Règlement intérieur</a>
                 </div>
                 <p class="text-white" data-i18n="footer.rights">© Move And Play Kids — Tous droits réservés</p>
-                <p class="text-white">Made with <span class="text-mpl-orange">❤️</span> by Lau</p>
+
         </div>
     </footer>
 
@@ -562,15 +599,6 @@
             </svg>
         </a>
     </div>
-
-    <!-- Round Opening Hours Popup -->
-    <div class="hours-popup">
-        <div class="hours-popup-content">
-            <div class="hours-popup-icon">🕒</div>
-            <div class="hours-popup-title">Portes Ouvertes</div>
-            <div class="hours-popup-dates">03 et 04 janvier</div>
-            <div class="hours-popup-time">de 9h à 15h</div>
-        </div>
-    </div>
+    
 </body>
 </html>
